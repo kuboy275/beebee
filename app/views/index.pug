@@ -1,0 +1,253 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'home-page'
+	-page= 'home'
+	-pageName= 'Home'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-9
+					.content-wrapper.home-wrapper 
+						.content-submit 
+							h6.content-submit-title Release Your Solana Project
+							h6.content-submit-title In 30 seconds
+							p.content-submit-desc Solmint will do 100% of the code work for your Solana Project.
+						.home-controls.py-4
+							.row.d-flex.align-items-center
+								.col-6.col-lg-auto.mb-4.mr-auto
+									a(href="#!" class="btn btn-secondary") Create Token 
+								.col-6.col-lg-auto.mb-4
+									a(href="#!" class="btn btn-secondary") OpenBook Market 
+								.col-6.col-lg-auto.mb-4.px-xl-0
+									a(href="#!" class="btn btn-secondary") Add Liquidity
+								.col-6.col-lg-auto.mb-4
+									a(href="#!" class="btn btn-secondary") Burn
+									
+						
+						//- Home Banner
+						.home-banner.pb-5
+							.home-banner-wrapper
+								.content 
+									.d-flex.align-items-center.gap-10
+										h2 All-in-one
+										div.tag-h2
+											span Token Tools 
+									h1 Perfect solution 
+									h3  
+										| for 
+										span.gradient Solana Developer 
+									a(href="#!" class="btn btn-primary") Mint Now
+						//- Home Features
+						.home-features.py-5.my-5
+							.home-features-title 
+								h3.title OUTSTANDING FEATURES
+								p.desc Provide quality service beyond expectations
+							.row 
+								.col-6.col-xl-4.mb-5
+									.home-features-item 
+										img.logo(src="./images/home-features-icon-1.png" alt="feature-icon")
+										h6.title.title-green 
+											| Sol
+											span -Mint
+										p.desc Create Token and OpenBook Market in just 30 seconds
+								.col-6.col-xl-4.mb-5
+									.home-features-item 
+										img.logo(src="./images/home-features-icon-2.png" alt="feature-icon")
+										h6.title.title-blue 
+											| Sol
+											span -Liquidity
+										p.desc Create & manage LP on all Solana AMMs Dex by Solmint platform
+								.col-6.col-xl-4.mb-5
+									.home-features-item 
+										img.logo(src="./images/home-features-icon-3.png" alt="feature-icon")
+										h6.title.title-purple 
+											| Sol
+											span -Lock
+										p.desc Lock Tokens and Liquidity intelligently and flexibly
+								.col-6.col-xl-4.mb-5
+									.home-features-item 
+										img.logo(src="./images/home-features-icon-4.png" alt="feature-icon")
+										h6.title.title-green 
+											| Sol
+											span -NFT
+										p.desc Create NFTs, NFT Collections, and create Marketplace to trade NFTs
+								.col-6.col-xl-4.mb-5
+									.home-features-item 
+										img.logo(src="./images/home-features-icon-5.png" alt="feature-icon")
+										h6.title.title-yellow 
+											| Sol
+											span -Sale
+										p.desc Launchpad for potential projects on the Solana chain
+								.col-6.col-xl-4.mb-5
+									.home-features-item 
+										img.logo(src="./images/home-features-icon-1.png" alt="feature-icon")
+										h6.title.title-purple 
+											| Sol
+											span -Bot
+										p.desc SolBot allows making all requests through Telegram
+						
+						//- Home Flow
+						.home-flow.py-5
+							.home-flow-title 
+								h3.title TOKEN FLOW 
+								p.desc Save time and money 
+							.home-flow-banner 
+								.row 
+									.col-12.col-xl-6.mb-5.pr-xl-0
+										img(src="./images/home-flow-banner-1.png", alt="Home Flow" height="100%" width="100%")
+									.col-12.col-xl-6.mb-5 
+										img(src="./images/home-flow-banner-2.png", alt="Home Flow" height="100%" width="100%")
+						//- Home Roadmaps
+						.home-maps.py-5
+							.home-maps-title 
+								h3.title ROAD MAPS 
+								p.desc Provide quality service beyond expectations 
+							.home-maps-phase 
+								.phase-item-wrap.active
+									.phase-line
+										.line-top 
+										.line-bottom
+									.phase-item
+										h6.phase-item-title Phase 1
+										ul.phase-item-list
+											li
+												span.dot
+												p SolMint : Token Creator (Token Mint, Update Metadata, Revoke & Immutable, Token Burn)
+											li
+												span.dot
+												p Openbook Market
+											li
+												span.dot
+												p Add Liquidity Pools on all Solana AMMs Dex (Raydium, Jupiter, Orca,...) via the Solmint Platform
+											li
+												span.dot
+												p Liquidity Management: Add more LP, Remove LP (Normal or Instant fast), Burn LP. 
+
+								.phase-item-wrap
+									.phase-line
+										.line-top 
+										.line-bottom
+									.phase-item 
+										h6.phase-item-title Phase 2
+										ul.phase-item-list
+											li
+												span.dot
+												p Creat Token 2022 Standard
+
+											li
+												span.dot
+												p SolLock: Lock Token and Liquidity
+
+											li
+												span.dot
+												p SolNFT: Generate NFT, Mint NFT, Creat NFT Presale, Creat NFT Staking, Snapshot NFT holder, NFT multisender, Update NFT metadata, Hashlist NFT, NFT incinerator
+
+											li
+												span.dot
+												p OutSource Service: Support, advise, design and program dApps according to the ideas and requirements of startup projects on Solana. 
+											li
+												span.dot
+												p Multichain: TON , ETH, BSC 
+								.phase-item-wrap
+									.phase-line
+										.line-top 
+										.line-bottom
+									.phase-item 
+										h6.phase-item-title Phase 3
+										ul.phase-item-list
+											li
+												span.dot
+												p SolSale: The launchpad protocol for every project on Solana
+											li
+												span.dot
+												p SolAiTrading : AMM Dex automated trading bot on solana
+
+						//- Home Partners
+						.home-partners.py-5
+							.home-partners-title
+								h3.title PARTNERS 
+								p.desc Strong flatforem, market leading partner 
+							.home-partners-sliders 
+								.slider-item 
+									img(src="./images/partner-logo-solana.png", alt="")
+								.slider-item 
+									img(src="./images/partner-logo-solana.png", alt="")
+								.slider-item 
+									img(src="./images/partner-logo-solana.png", alt="")
+								.slider-item 
+									img(src="./images/partner-logo-solana.png", alt="")
+								.slider-item 
+									img(src="./images/partner-logo-solana.png", alt="")
+								.slider-item 
+									img(src="./images/partner-logo-solana.png", alt="")
+								.slider-item 
+									img(src="./images/partner-logo-solana.png", alt="")
+								.slider-item 
+									img(src="./images/partner-logo-solana.png", alt="")
+
+						//-  Home FAQ
+						.home-faq.py-5.mt-5
+							.home-faq-title 
+								h3.title FAQ
+								p.desc Frequently asked questions
+							.home-faq-collapse
+								.card
+									#headingOne.card-header
+										button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true') 
+											| What is Solana Token Generator?
+											span.icon-toggle 
+												i.far.fa-plus-circle
+									#collapseOne.collapse.show(data-parent='.home-faq-collapse')
+										.card-body
+											p The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.
+											p This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.
+								.card
+									#headingOne.card-header
+										button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false') 
+											| Do I have full ownership of the generated token?
+											span.icon-toggle 
+												i.far.fa-plus-circle
+									#collapseTwo.collapse(data-parent='.home-faq-collapse')
+										.card-body
+											p The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.
+											p This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.
+								.card
+									#headingOne.card-header
+										button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false') 
+											| How much time will Solana Token Generator here?
+											span.icon-toggle 
+												i.far.fa-plus-circle
+									#collapseThree.collapse(data-parent='.home-faq-collapse')
+										.card-body
+											p The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.
+											p This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.
+								.card
+									#headingOne.card-header
+										button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseFour' aria-expanded='false') 
+											| Mow much does the Solana Token Generator Cost?
+											span.icon-toggle 
+												i.far.fa-plus-circle
+									#collapseFour.collapse(data-parent='.home-faq-collapse')
+										.card-body
+											p The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.
+											p This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.
+								.card
+									#headingOne.card-header
+										button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseFive' aria-expanded='false') 
+											| How does Solmint work?
+											span.icon-toggle 
+												i.far.fa-plus-circle
+									#collapseFive.collapse(data-parent='.home-faq-collapse')
+										.card-body
+											p The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.
+											p This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.
+									

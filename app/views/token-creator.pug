@@ -1,0 +1,131 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'token-creator'
+	-pageName= 'Token Creator'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-6.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title SPL-Token Creator
+								p.content-submit-desc Easily Create your own Solana SPL Token in just 7+1 steps without Coding.
+								form(action="" class="form-submit")
+									.form-group 
+										label(for="") Token Name (ex. SolMint)
+										input(type="text" class="form-control" placeholder="Enter token name")
+									.form-row 
+										.col-12.col-xl-6
+											.form-group 
+												label(for="")  Decimals (1-9)
+												input(type="text", class="form-control", placeholder="9", name="")
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Symbol (Max 8, ex. SM)
+												input(type="text", class="form-control", placeholder="Enter token symbol", name="")
+									.form-group 
+										label(for="") Amount
+										input(type="text" class="form-control" placeholder="1.000.000.000")
+									.form-group 
+										label(for="") Description 
+										textarea(name="", class="form-control", rows="4", placeholder="Enter project description")
+									.form-group.form-upload-file
+										label(for="") Logo 
+										label(for="fileUploadLogo" class="label-upload-logo")
+											img(src="./images/icons/default-upload.png", alt="")
+											.desc 
+												p.name-img
+												p 
+													span.font-bold Click to upload 
+													| or drag and drop
+												p SVG, PNG, JPG or GIF (max. 400x400px)
+											input(type="file" class="form-control-file js-upload-logo" id="fileUploadLogo" name="fileUploadLogo" accept="image/*")
+									.form-row 
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Website
+												input(type="text", class="form-control", placeholder="Website URL", name="")
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Twitter
+												input(type="text", class="form-control", placeholder="Twitter URL", name="")
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Telegram
+												input(type="text", class="form-control", placeholder="Telegram URL", name="")
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Other
+												input(type="text", class="form-control", placeholder="Optional URL", name="")
+									.form-row.py-4
+										.col-4
+											.form-group.form-check
+												span.label Immutable
+												input(type="checkbox" id="Immutable" checked)
+												label(for="Immutable") 
+												span.status FREE
+										.col-4
+											.form-group.form-check
+												span.label Revoke Freeze
+												input(type="checkbox" id="revoke-freeze" checked)
+												label(for="revoke-freeze" ) 
+												span.status FREE
+										.col-4
+											.form-group.form-check
+												span.label Revoke Mint
+												input(type="checkbox" id="revoke-mint" checked)
+												label(for="revoke-mint" ) 
+												span.status FREE
+									button(type="submit" class="btn btn-primary w-100") Connect Wallet
+								form(action="" class="form-submit mt-5")
+									.form-group 
+										input(type="text" class="form-control" placeholder="Your token address")
+									button(type="submit" class="btn btn-secondary w-100 my-3") Coppy your token address
+									button(type="submit" class="btn btn-secondary w-100") Create open book market now
+				.col-12.col-xl-3
+					.step-bar 
+						h6.step-bar-title How to use SPL-Token Creator
+						.step-bar-list 
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Connect your Solana wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Write the name you want for your Token
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Indicate the symbol (max 8 characters)
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Select the decimals quantity
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Write the description you want for your SPL Token
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Upload the image for your token (PNG)
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Put the Supply of your Token
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Click on create, accept the transaction and wait until your token is ready

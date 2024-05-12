@@ -1,0 +1,56 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'un-lock'
+	-pageName= 'Unlock Token'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-6.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title Unlock Token
+								h6.content-submit-title (SPL Token & LP Token)
+								p.content-submit-desc Unlock Token with 1 click.
+								form(action="" class="form-submit")
+										.form-group 
+											label(for="") Seed Key
+											input(type="text" class="form-control" placeholder="Enter your seed key")
+										.form-group.my-5 
+											label(for="") LP Token Address
+											input(type="text" class="form-control" placeholder="Enter your seed key")
+										button(type="submit" class="btn btn-secondary w-100") Unlock Token
+				.col-12.col-xl-3
+					.step-bar 
+						h6.step-bar-title How does it work?
+						.step-bar-list 
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Connect your Solana Wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Enter your Seed Key
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Enter Token Address
+							.item.tall
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Click SUBMIT button
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Accept the transaction and wait until the transaction is completed

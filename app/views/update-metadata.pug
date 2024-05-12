@@ -1,0 +1,91 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'update-metadata'
+	-pageName= 'Update Metadata'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-6.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title Update token metadata
+								p.content-submit-desc Easily Update the Metadata of your own Solana Token.
+								form(action="" class="form-submit")
+									.form-group 
+										label(for="") Token Address
+										input(type="text" class="form-control" placeholder="Connect your wallet please")
+									.form-group 
+										label(for="") Token Name (ex: SolMint)
+										input(type="text" class="form-control" placeholder="Enter token name")
+									.form-group 
+										label(for="") Symbol (ex: SM)
+										input(type="text" class="form-control" placeholder="Enter token symbol")
+									
+									.form-group.form-upload-file
+										label(for="") Logo 
+										label(for="fileUploadLogo" class="label-upload-logo")
+											img(src="./images/icons/default-upload.png", alt="")
+											.desc 
+												p.name-img
+												p 
+													span.font-bold Click to upload 
+													| or drag and drop
+												p SVG, PNG, JPG or GIF (max. 400x400px)
+											input(type="file" class="form-control-file js-upload-logo" id="fileUploadLogo" name="fileUploadLogo" accept="image/*")
+									.form-group 
+										label(for="") Description 
+										textarea(name="", class="form-control", rows="4", placeholder="Enter project description")
+									.form-row 
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Website
+												input(type="text", class="form-control", placeholder="Website URL", name="")
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Twitter
+												input(type="text", class="form-control", placeholder="Twitter URL", name="")
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Telegram
+												input(type="text", class="form-control", placeholder="Telegram URL", name="")
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Other
+												input(type="text", class="form-control", placeholder="Optional URL", name="")
+									button(type="submit" class="btn btn-secondary w-100") Update Token
+								
+				.col-12.col-xl-3
+					.step-bar 
+						h6.step-bar-title How to update token metadata
+						.step-bar-list 
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Connect your Solana wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Select the Token from your wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Enter the new info you for your Token
+							.item.tall
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Select if you want to make it immutable or revoke any authority
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Click on Update Token and confirm the Transaction

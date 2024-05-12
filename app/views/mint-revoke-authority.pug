@@ -1,0 +1,112 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'mint-revoke-authority'
+	-pageName= 'Mint, Revoke Authority'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-6.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title Token Mint, Revoke Freeze & Mint Authority
+								p.content-submit-desc Easily revoke the Mint and Freeze Authority of any Token you created.
+								form(action="" class="form-submit")
+									.form-group 
+										label(for="") Token Address
+										input(type="text" class="form-control" placeholder="Enter token address")
+									.add-receiver-address-section
+										.add-receiver-wrapper
+											.form-row
+												.col-8
+													.form-group.mb-0
+														label(for="") Receiver Address
+												.col-4
+													.form-group.mb-0
+														label(for="") Amount
+											.form-row.multiple-input
+												.col-8
+													.form-group
+														input(type="text" name="receiver-address-field[]" class="form-control" placeholder="Enter receiver address")
+												.col-4
+													.form-group
+														input(type="text" name="receiver-amount[]" class="form-control" placeholder="How much")
+														button(type="button" class="btn btn-icon js-remove-receiver-input")
+															i.far.fa-times
+										.add-input.d-flex.align-items-center.pb-4
+											span.label Add Receiver address 
+											button(type="button" class="btn btn-icon js-add-receiver-input")
+												i.far.fa-plus
+									button(type="submit" class="btn btn-secondary w-100") Connect Wallet
+									.form-row.py-4
+										.col-4
+											.form-group.form-check
+												span.label Revoke Freeze
+												input(type="checkbox" id="revoke-freeze" checked)
+												label(for="revoke-freeze" ) 
+												span.status FREE
+										.col-4
+											.form-group.form-check
+												span.label Revoke Freeze
+												input(type="checkbox" id="revoke-mint" checked)
+												label(for="revoke-mint" ) 
+												span.status FREE
+									button(type="submit" class="btn btn-secondary w-100") Connect Wallet
+								
+				.col-12.col-xl-3
+					.step-bar 
+						h6.step-bar-title How to use Revoke Authority
+						.step-bar-list 
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Connect your Solana wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Select the Token from your wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Click on Revoke Mint or Revoke Freeze
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Accept the Transaction
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Wait a second and the changes will be applied
+					.step-bar 
+						h6.step-bar-title How to use Token Mint
+						.step-bar-list 
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Connect your Solana wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Select the Token from your wallet to mint
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Enter the quantity you want to mint
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Click on Mint Token and confirm the Transaction
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Wait a minute for your update

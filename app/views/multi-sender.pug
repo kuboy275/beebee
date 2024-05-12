@@ -1,0 +1,61 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'multi-sender'
+	-pageName= 'Multisender'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-7.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title Solana Token Multisender
+								p.content-submit-desc Easily send any Solana Token to thousands wallets with 1 click
+								form(action="" class="form-submit")
+									.form-group
+										label(for="") Token Address
+										input(type="text" class="form-control" placeholder="Your Token Address")
+									.d-flex.flex-wrap.gap-10.my-5 
+										button(type="button" class="btn btn-secondary") UPLOAD CSV
+										button(type="button" class="btn btn-secondary") DOWNLOAD CSV SAMPLE
+									.form-group
+										label(for="") LIST OF WALLET ADDRESSES
+										ul.list-of-wallet 
+											li
+												p 49vwyQ9hT8p5kxZ7DutXWUjX4vHBALrS5wAxpr2ZfRYG
+											li
+												p 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+											li
+												p 9grrSLfZ5S1cosQh9uGxAvrf6ZDPnJqA7R4CKMXfAB8A
+											li
+												p ri2fPBq3TVkY9neCeiJRuCs2YdviVfaHxrVZtqpFdLz
+											li
+												p 2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8
+											li
+												p 2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8
+											li
+												p 2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8
+											li
+												p 2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8
+											li
+												p 2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8
+											li
+												p 2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8
+											li
+												p 2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8
+										.result-wallet.d-flex.justify-content-between.flex-wrap.my-5.gap-10 
+											h4.h4 TOTAL WALLETS: 
+												span.value 111111111111
+											h4.h4 TOTAL TX FEES: 
+												span.value (0.001 * TOTAL WALLETS)
+									button(type="submit" class="btn btn-secondary w-100") SUBMIT

@@ -1,0 +1,73 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'create-liquidity-pool'
+	-pageName= 'Create Liquidity Pool'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-9.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-10.mx-auto
+								h6.content-submit-title Create Liquidity Pool 
+								p.content-submit-desc Use the default mode, the cost will be the lowest. Just fill in the contract token and then click "Create Openbook Market"
+								form(action="" class="form-submit")
+									.form-group 
+										label(for="") Openbook Market ID
+										input(type="text" class="form-control" value="0x12...282723f1")
+									.form-group 
+										label(for="") Amount
+										input(type="text" class="form-control" placeholder="1.000.000.000")
+									button(type="submit" class="btn btn-secondary w-100 mt-5") Load Market Info
+
+								form(action="" class="form-submit mt-5")
+									.row 
+										.form-group.col-12.col-xl-6 
+											label(for="") Base Token Intial Liquidity 
+											.form-box 
+												.box-from.d-flex.align-items-center.justify-content-between 
+													h3 FORM 
+													span.logo.d-flex.align-items-center.gap-10
+														img(src="./images/logo-t.png", alt="")
+														| SOL
+												.box-amount.d-flex.align-items-center.justify-content-between.my-4
+													span.label Amount 
+													input(type="text" class="form-control" autofocus value="2.1223")
+												.box-balane.d-flex.align-items-center.justify-content-between
+													span.label Balance 
+													.result.d-flex.align-items-center.justify-content-between.gap-10 
+														span 18.7685 
+														button(type="button" class="btn btn-secondary btn-secondary-small") MAX
+										.form-group.col-12.col-xl-6 
+											label(for="") Quote Token Intial Liquidity
+											.form-box 
+												.box-from.d-flex.align-items-center.justify-content-between 
+													h3 FORM 
+													span.logo.d-flex.align-items-center.gap-10
+														img(src="./images/logo-t.png", alt="")
+														| SOL
+												.box-amount.d-flex.align-items-center.justify-content-between.my-4
+													span.label Amount 
+													input(type="text" class="form-control" autofocus value="2.1223")
+												.box-balane.d-flex.align-items-center.justify-content-between
+													span.label Balance 
+													.result.d-flex.align-items-center.justify-content-between.gap-10 
+														span 18.7685 
+														button(type="button" class="btn btn-secondary btn-secondary-small") MAX
+									.form-group 
+										label(for="") Openbook Market ID
+										input(type="text" class="form-control" value="0x12...282723f1")
+									.form-group 
+										label(for="") Start time (Optional)
+										input(type="datetime-local" class="form-control form-control-date" placeholder="MM:DD:YY HH:MM")
+									button(type="submit" class="btn btn-secondary w-100 mt-5") Intialize Liquidity Pool

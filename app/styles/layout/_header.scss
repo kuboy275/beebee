@@ -1,0 +1,57 @@
+.main-header {
+    background: #FCFDFE;
+    border-radius: 0px, 0px, 1px, 0px;
+    @media only screen and (max-width:1200px){
+        height: 85px;
+    }
+    .bread-crumbs {
+        .title-page {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: var(--text-black);
+            margin-bottom: 5px;
+        }
+        &-list {
+            li {
+                span,
+                a {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    padding-right: 2px;
+                    color: var(--light-grey);
+
+                    &.active {
+                        color: var(--text-black);
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-connect-wallet {
+        @media only screen and (max-width:1200px){
+            padding: 15px;
+        }
+    }
+
+    .btn-open-menu {
+        padding: 12px;
+        background: #1F1D20;
+        width: 48px;
+        height: 48px;
+        &.opened {
+            .icon-open {
+                display: none;
+            }
+            .icon-close {
+                display: inline;
+            }
+        }
+        .icon-close {
+            display: none;
+            font-size: 22px;
+        }
+    }
+}

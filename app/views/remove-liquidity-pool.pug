@@ -1,0 +1,102 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'remove-liquidity-pool'
+	-pageName= 'Remove Liquidity Pool'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-6.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title Remove Liquidity Pool 
+								p.content-submit-desc Just fill in the Market ID, and then click 'Remove Raydium LP'
+								form(action="" class="form-submit")
+									.form-group 
+										label(for="") Enter Liquidity Address (AMM ID):
+										input(type="text" class="form-control" placeholder="Enter Liquidity Address (AMM ID)")
+									button(type="submit" class="btn btn-secondary w-100 mt-5") Load Market Info
+
+								form(action="" class="form-submit mt-5")
+									.form-group
+										label(for="") Liquidity Pool Info
+										.form-box 
+											.box-from.d-flex.align-items-center.justify-content-between 
+												h3 Base Mint / Quote Mint 
+											.box-amount.d-flex.align-items-center.justify-content-between.my-4
+												span.label Amount 
+												input(type="text" class="form-control" autofocus value="2.1223")
+											.box-balane.d-flex.align-items-center.justify-content-between
+												span.label Balance 
+												.result.d-flex.align-items-center.justify-content-between.gap-10 
+													span 18.7685 
+													button(type="button" class="btn btn-secondary btn-secondary-small") MAX
+									button(type="submit" class="btn btn-secondary w-100 mt-5") Withdraw Liquidity Pool
+				.col-12.col-xl-3
+					.nav-tab-section 
+						ul#myTab.nav.nav-tabs(role='tablist')
+							li.nav-item(role='presentation')
+								button(class="w-100 nav-link" data-toggle='tab' data-target='#add-more-LP' type='button' role='tab' aria-selected='false') Add More LP
+							li.nav-item(role='presentation')
+								button(class="w-100 nav-link active" data-toggle='tab' data-target='#remove-LP' type='button' role='tab' aria-selected='true') Remove LP
+						#myTabContent.tab-content
+							#add-more-LP.tab-pane.fade.show
+								.step-bar 
+									h6.step-bar-title How to use Add More LP
+									.step-bar-list 
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Connect your Solana wallet
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Enter the Liquidity Pool Address (AMM ID)
+										.item.tall
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Select the quantity of Base Token you want to add
+												br
+												| Quote mint will be automatically calculated
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Click on add liquidity
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Accept the transaction and wait until the withdrawal is completed
+							#remove-LP.tab-pane.fade.show.active
+								.step-bar 
+									h6.step-bar-title How to use Remove LP
+									.step-bar-list 
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Connect your Solana wallet
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Enter the Liquidity Pool Address (AMM ID)
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Select the quantity you want to withdraw
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Click on withdraw liquidity
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Accept the transaction and wait until the withdrawal is completed

@@ -1,0 +1,19 @@
+.modal.modal-popup(tabindex='-1' id="modalConnectWallet")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				img(src="./images/logo.png", alt="" width="100px")
+				button(type='button' data-dismiss='modal' aria-label='Close' class="close btn btn-icon")
+					i.fal.fa-times
+			.modal-body
+				h3.modal-title Connect a wallet on Solana to continue
+				form.form-modal(action="")
+					.form-select 
+						.item-select 
+							.icon 
+							span Phantom
+					.form-select 
+						.item-select 
+							.icon 
+							span Metamask
+					button(type="submit" class="btn btn-primary w-100")  Connect

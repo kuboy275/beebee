@@ -1,0 +1,33 @@
+header.main-header
+	.container.py-4.py-xl-3
+		.row.align-items-center.justify-content-between
+			.col-auto.d-block.d-xl-none
+				button(class="btn btn-icon btn-open-menu")
+					img(src="./images/icons/bars-icon.png", alt="" class="icon-open")
+					i.fal.fa-times.icon-close
+			.col-auto.col-xl-3 
+				a.logo(href="./index.html")
+					img(src="./images/logo.png", alt="Logo" class="logo-desktop")
+					//- img(src="./images/logo-no-text-gradient.png", alt="Logo" class="logo-mobile d-block d-xl-none")
+			.col-12.col-xl-5.d-none.d-xl-block
+				.bread-crumbs.d-flex.flex-column 
+					h6.title-page SOLMINT
+					ul.bread-crumbs-list.d-flex.align-items-center
+						if page === 'home' || page === 'openbook-market'
+							li 
+								span.active #{pageName}
+						else 
+							li 
+								span Home/
+							li 
+								span Token Manager/
+							li 
+								span.active #{pageName}
+			.col-auto.col-xl-4.pl-0
+				.d-flex.align-items-center.justify-content-end.gap-20
+					.logo.d-none.d-xl-block
+						img(src="./images/logo-solana.png", alt="Solana Logo")
+					a(href="#!" class="btn btn-primary btn-connect-wallet" data-toggle="modal" data-target="#modalConnectWallet") 
+						//- img(src="./images/logo-no-text.png", alt="" class="img-desktop d-none d-xl-block")
+						img(src="./images/logo-wallet.png", alt="" class="img-mobile d-block d-xl-none")
+						span.d-none.d-xl-block Connect wallet

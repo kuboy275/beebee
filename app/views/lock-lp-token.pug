@@ -1,0 +1,83 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'lock-lp-token'
+	-pageName= 'LP Lock'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-6.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title Lock Token
+								h6.content-submit-title (SPL Token and LP Token)
+								p.content-submit-desc Lock LP Token with 1 click !
+								form(action="" class="form-submit")
+									.form-group 
+										label(for="") Token Address (SPL Token and LP Token)
+										input(type="text" class="form-control" placeholder="Enter Your Token Address")
+									.form-group.my-5
+										.form-box 
+											.box-from.d-flex.align-items-center.justify-content-between 
+												h3 Amount to lock
+											.box-amount.d-flex.align-items-center.justify-content-between.my-4
+												span.label Amount 
+												input(type="text" class="form-control" autofocus value="2.1223")
+											.box-balane.d-flex.align-items-center.justify-content-between
+												span.label Balance 
+												.result.d-flex.align-items-center.justify-content-between.gap-10 
+													span 18.7685 
+													button(type="button" class="btn btn-primary btn-primary-small") MAX
+									.form-group.my-5
+										label(for="") Lock time
+										input(type="datetime-local" class="form-control form-control-date" placeholder="MM:DD:YY HH:MM")
+									button(type="submit" class="btn btn-primary w-100") Lock Token (cost 1 SOL)
+								form.form-submit 
+									.form-group.key-address.my-5 
+										label(for="") SEED KEY
+										.key-adress-input
+											input(type="text" class="form-control" placeholder="Enter your LP address")
+											button.btn.btn-secondary.btn-secondary-small.btn-copy(type="button") 
+												i.ti.ti-copy.mr-3
+												| Copy
+									.form-group.key-address
+										label(for="") LOCK ADDRESS
+										.key-adress-input
+											input(type="text" class="form-control" placeholder="Enter your LP address")
+											button.btn.btn-secondary.btn-secondary-small.btn-copy(type="button") 
+												i.ti.ti-copy.mr-3
+												| Copy
+				.col-12.col-xl-3
+					.step-bar 
+						h6.step-bar-title How to Lock LP
+						.step-bar-list 
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Connect your Solana Wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Enter the Liquidity Pool Address
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Select the amount of LP Token you want to lock
+							.item.tall
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Select time to lock LP Token
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Accept the transaction and wait until the transaction is completed

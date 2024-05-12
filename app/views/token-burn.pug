@@ -1,0 +1,87 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'token-burn'
+	-pageName= 'Token Burn'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-6.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title Burn SPL-Token
+								p.content-submit-desc Easy to burn SPL-Token with 1 click !
+								form(action="" class="form-submit")
+									.form-group 
+										label(for="") Token Address
+										input(type="text" class="form-control" placeholder="Enter token name")
+									.form-group 
+										label(for="") Amount
+										input(type="text" class="form-control" placeholder="1.000.000.000")
+									button(type="submit" class="btn btn-secondary w-100 mt-5") Connect Wallet
+				.col-12.col-xl-3
+					.nav-tab-section 
+						ul#myTab.nav.nav-tabs(role='tablist')
+							li.nav-item(role='presentation')
+								button(class="w-100 nav-link active" data-toggle='tab' data-target='#spl-token' type='button' role='tab' aria-selected='true') Burn SPL-Token
+							li.nav-item(role='presentation')
+								button(class="w-100 nav-link" data-toggle='tab' data-target='#lp-token' type='button' role='tab' aria-selected='false') Burn LP-Token
+						#myTabContent.tab-content
+							#spl-token.tab-pane.fade.show.active
+								.step-bar 
+									h6.step-bar-title How to use SPL-Token Creator
+									.step-bar-list 
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Connect your Solana wallet
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Select the Token from your wallet
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Enter the amount of SPL tokens you want to burn
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Accept the Transaction
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Wait a second
+							#lp-token.tab-pane.fade
+								.step-bar 
+									h6.step-bar-title How to use Burn LP-Token
+									.step-bar-list 
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Connect your Solana wallet
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Select the Token from your wallet 
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Enter the amount of LP token you want to burn
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Accept the Transaction
+										.item 
+											span.icon 
+												img(src="./images/icons/check-icon.png", alt="")
+											p Wait a second

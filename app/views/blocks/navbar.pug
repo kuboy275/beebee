@@ -1,0 +1,256 @@
+.navbar-menu-left
+	ul.navbar-wrapper 
+		//- Home
+		li.navbar-item 
+			a.navbar-link(href="./index.html" class=(page === 'home' ? 'active': ''))
+				span.icon 
+					i.ti.ti-home-2
+				| Home 
+		
+		//- Token Manager
+		li.navbar-item.dropdown
+			a.navbar-link(data-toggle="collapse" href="#collapseTokenManager" aria-expanded="false")
+				span.icon 
+					i.ti.ti-coins
+				| Token Management 
+				i.far.fa-angle-down
+			div#collapseTokenManager.collapse
+				ul.navbar-dropdown 
+					li.navbar-item 
+						a.navbar-link(href="token-creator.html" class=(page === 'token-creator' ? 'active' : '') )
+							span.icon 
+								i.ti.ti-vector
+							| Token Creator 
+							span.status-ic 
+								img(src="./images/icons/flame-filled-ic.png", alt="")
+					li.navbar-item 
+						a.navbar-link(href="mint-revoke-authority.html" class=(page === 'mint-revoke-authority' ? 'active' : '') )
+							span.icon 
+								i.ti.ti-businessplan
+							| Mint, Revoke Authority 
+					li.navbar-item 
+						a.navbar-link(href="./token-burn.html" class=(page === 'token-burn' ? 'active' : ''))
+							span.icon 
+								i.ti.ti-flame
+							| Token Burn
+					li.navbar-item 
+						a.navbar-link(href="./update-metadata.html" class=(page === 'update-metadata' ? 'active' : ''))
+							span.icon 
+								i.ti.ti-edit-circle
+							| Update Metadata
+					li.navbar-item 
+						a.navbar-link(href="multi-sender.html" class=(page === 'multi-sender' ? 'active' : ''))
+							span.icon 
+								i.ti.ti-users-group
+							| Multisender
+		
+		//- Openbook Market
+		li.navbar-item 
+			a.navbar-link(href="./openbook-market.html" class=(page === 'openbook-market' ? 'active' : ''))
+				span.icon 
+					i.ti.ti-building-store
+				| Create Openbook Market
+				span.status-ic 
+					img(src="./images/icons/flame-filled-ic.png", alt="")
+		
+		//- LP Management
+		li.navbar-item.dropdown
+			a.navbar-link(data-toggle="collapse" href="#collapseLpManagement" aria-expanded="false")
+				span.icon 
+					i.ti.ti-droplet
+				| LP Management
+				i.far.fa-angle-down
+			div#collapseLpManagement.collapse
+				ul.navbar-dropdown 
+					//- Create Liquidity Pool Level 2
+					//- li.navbar-item 
+					//- 	a.navbar-link(data-toggle="collapse" href="#collapseCreateLiquidityPool" aria-expanded="false")
+					//- 		span.icon 
+					//- 			i.ti.ti-bucket-droplet
+					//- 		| Create Liquidity Pool 
+					//- 		i.far.fa-angle-down
+					//- 	div#collapseCreateLiquidityPool.collapse
+					//- 		ul.navbar-dropdown 
+					//- 			li.navbar-item 
+					//- 				a.navbar-link(href="#!")
+					//- 					span.icon 
+					//- 						i.ti.ti-currency-solana
+					//- 					| Raydium AMMs
+					//- 					span.status-ic 
+					//- 						img(src="./images/icons/flame-filled-ic.png", alt="")
+					//- 			li.navbar-item 
+					//- 				a.navbar-link.disabled(href="#!")
+					//- 					span.icon 
+					//- 						i.ti.ti-currency-solana
+					//- 					| Jupiter AMMs
+					//- 					span.status SOON
+					//- 			li.navbar-item 
+					//- 				a.navbar-link.disabled(href="#!")
+					//- 					span.icon 
+					//- 						i.ti.ti-currency-solana
+					//- 					| Orca AMMs
+					//- 					span.status SOON
+
+					li.navbar-item 
+						a.navbar-link(href="./create-liquidity-pool.html" class=(page === 'create-liquidity-pool' ? 'active' : '') )
+							span.icon 
+								i.ti.ti-bucket-droplet
+							| Create Liquidity Pool
+					li.navbar-item 
+						a.navbar-link(href="./add-liquidity-pool.html" class=(page === 'add-liquidity-pool' ? 'active' : '') )
+							span.icon 
+								i.ti.ti-droplet-up
+							| Add More Liquidity Pool
+					li.navbar-item 
+						a.navbar-link(href="./remove-liquidity-pool.html" class=(page === 'remove-liquidity-pool' ? 'active' : '') )
+							span.icon 
+								i.ti.ti-droplet-x
+							| Remove Liquidity Pool
+
+					//- Remove Liquidity Pool Level 2
+					//- li.navbar-item 
+					//- 	a.navbar-link(data-toggle="collapse" href="#collapseRemoveLiquidityPool" aria-expanded="false")
+					//- 		span.icon 
+					//- 			i.ti.ti-droplet-x
+					//- 		| Remove Liquidity Pool
+					//- 		i.far.fa-angle-down
+					//- 	div#collapseRemoveLiquidityPool.collapse
+					//- 		ul.navbar-dropdown 
+					//- 			li.navbar-item 
+					//- 				a.navbar-link(href="#!")
+					//- 					span.icon 
+					//- 						i.ti.ti-trash
+					//- 					| Normal Remove
+					//- 			li.navbar-item 
+					//- 				a.navbar-link(href="#!")
+					//- 					span.icon 
+					//- 						i.ti.ti-trash-x
+					//- 					| Instant Remove
+					li.navbar-item 
+						a.navbar-link(href="#!")
+							span.icon 
+								i.ti.ti-campfire
+							| Burn Liquidity
+							span.status-ic 
+								img(src="./images/icons/flame-filled-ic.png", alt="")
+					li.navbar-item 
+						a.navbar-link(href="#!")
+							span.icon 
+								i.ti.ti-lock
+							| Lock Liquidity
+	   
+		//- SolMintBot
+		li.navbar-item 
+			a.navbar-link.disabled
+				span.icon 
+					i.ti.ti-robot
+				| SolMintBot
+				span.status SOON
+
+		//- Lock Management
+		li.navbar-item.dropdown
+			a.navbar-link(data-toggle="collapse" href="#collapseCreateLock" aria-expanded="false")
+				span.icon 
+					i.ti.ti-lock-access
+				| Lock Management
+				i.far.fa-angle-down
+			div#collapseCreateLock.collapse
+				ul.navbar-dropdown 
+					li.navbar-item 
+						a.navbar-link(href="lock-lp-token.html" class=(page === 'lock-lp-token' ? 'active' : ''))
+							span.icon 
+								i.ti.ti-circle-key
+							| Lock Token
+					li.navbar-item 
+						a.navbar-link(href="unlock.html" class=(page === 'un-lock' ? 'active' : ''))
+							span.icon 
+								i.ti.ti-cloud-lock
+							| Unlock Token
+					li.navbar-item 
+						a.navbar-link(href="info-lock.html" class=(page === 'info-lock' ? 'active' : ''))
+							span.icon 
+								i.ti.ti-cloud-lock
+							| Lock Info
+
+		//- NFT
+		li.navbar-item.dropdown
+			a.navbar-link.disabled(data-toggle="collapse" href="#collapseNFT" aria-expanded="false")
+				span.icon 
+					i.ti.ti-photo-heart
+				| NFT
+				//- i.far.fa-angle-down
+				span.status SOON
+			div#collapseNFT.collapse
+				ul.navbar-dropdown 
+					li.navbar-item 
+						a.navbar-link(href="#!" )
+							span.icon 
+								i.ti.ti-brush
+							| Generate NFT
+					li.navbar-item 
+						a.navbar-link(href="#!")
+							span.icon 
+								i.ti.ti-pointer
+							| Creat Mint
+					li.navbar-item 
+						a.navbar-link(href="#!")
+							span.icon 
+								i.ti.ti-speakerphone
+							| Creat NFT presale
+					li.navbar-item 
+						a.navbar-link(href="#!")
+							span.icon 
+								i.ti.ti-stairs
+							| Creat NFT staking
+
+					//- NFT Manager Level 2
+					li.navbar-item 
+						a.navbar-link(data-toggle="collapse" href="#collapseNFTManager" aria-expanded="false")
+							span.icon 
+								i.ti.ti-circles
+							| NFT manager
+							i.far.fa-angle-down
+						div#collapseNFTManager.collapse
+							ul.navbar-dropdown 
+								li.navbar-item 
+									a.navbar-link(href="#!")
+										span.icon 
+											i.ti.ti-moneybag
+										| Snapshot NFT holder
+								li.navbar-item 
+									a.navbar-link(href="#!")
+										span.icon 
+											i.ti.ti-tournament
+										| NFT multisender
+								li.navbar-item 
+									a.navbar-link(href="#!")
+										span.icon 
+											i.ti.ti-brand-databricks
+										| Update NFT metadata
+								li.navbar-item 
+									a.navbar-link(href="#!")
+										span.icon 
+											i.ti.ti-matchstick
+										| NFT Incinerator
+		
+		//- Launchpad
+		li.navbar-item 
+			a.navbar-link.disabled(disabled)
+				span.icon 
+					i.ti.ti-rocket
+				| Launchpad
+				span.status SOON
+		//- Trading Bot
+		li.navbar-item 
+			a.navbar-link.disabled(disabled)
+				span.icon 
+					i.ti.ti-chart-dots
+				| Trading Bot
+				span.status SOON
+		//- SolClaim
+		li.navbar-item 
+			a.navbar-link.disabled(disabled)
+				span.icon 
+					i.ti.ti-hand-click
+				| SolClaim
+				span.status SOON

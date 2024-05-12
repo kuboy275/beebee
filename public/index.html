@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SOLMINT</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body class="home-page">
+    <div class="page-wrapper">
+      <header class="main-header">
+        <div class="container py-4 py-xl-3">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto d-block d-xl-none">
+              <button class="btn btn-icon btn-open-menu"><img class="icon-open" src="./images/icons/bars-icon.png" alt=""><i class="fal fa-times icon-close"></i></button>
+            </div>
+            <div class="col-auto col-xl-3"> <a class="logo" href="./index.html"><img class="logo-desktop" src="./images/logo.png" alt="Logo"></a></div>
+            <div class="col-12 col-xl-5 d-none d-xl-block">
+              <div class="bread-crumbs d-flex flex-column"> 
+                <h6 class="title-page">SOLMINT</h6>
+                <ul class="bread-crumbs-list d-flex align-items-center">
+                  <li> <span class="active">Home</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto col-xl-4 pl-0">
+              <div class="d-flex align-items-center justify-content-end gap-20">
+                <div class="logo d-none d-xl-block"><img src="./images/logo-solana.png" alt="Solana Logo"></div><a class="btn btn-primary btn-connect-wallet" href="#!" data-toggle="modal" data-target="#modalConnectWallet"> <img class="img-mobile d-block d-xl-none" src="./images/logo-wallet.png" alt=""><span class="d-none d-xl-block">Connect wallet</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-content py-0">
+        <div class="container"> 
+          <div class="row">	
+            <div class="col-12 col-xl-3">
+              <div class="sidebar-left">
+                <div class="navbar-menu-left">
+                  <ul class="navbar-wrapper"> 
+                    <li class="navbar-item"> <a class="navbar-link active" href="./index.html"><span class="icon"> <i class="ti ti-home-2"></i></span>Home </a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseTokenManager" aria-expanded="false"><span class="icon"> <i class="ti ti-coins"></i></span>Token Management <i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseTokenManager">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="token-creator.html"><span class="icon"> <i class="ti ti-vector"></i></span>Token Creator <span class="status-ic"> <img src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="mint-revoke-authority.html"><span class="icon"> <i class="ti ti-businessplan"></i></span>Mint, Revoke Authority </a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="./token-burn.html"><span class="icon"> <i class="ti ti-flame"></i></span>Token Burn</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="./update-metadata.html"><span class="icon"> <i class="ti ti-edit-circle"></i></span>Update Metadata</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="multi-sender.html"><span class="icon"> <i class="ti ti-users-group"></i></span>Multisender</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="./openbook-market.html"><span class="icon"> <i class="ti ti-building-store"></i></span>Create Openbook Market<span class="status-ic"> <img src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseLpManagement" aria-expanded="false"><span class="icon"> <i class="ti ti-droplet"></i></span>LP Management<i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseLpManagement">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="./create-liquidity-pool.html"><span class="icon"> <i class="ti ti-bucket-droplet"></i></span>Create Liquidity Pool</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="./add-liquidity-pool.html"><span class="icon"> <i class="ti ti-droplet-up"></i></span>Add More Liquidity Pool</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="./remove-liquidity-pool.html"><span class="icon"> <i class="ti ti-droplet-x"></i></span>Remove Liquidity Pool</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-campfire"></i></span>Burn Liquidity<span class="status-ic"> <img src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-lock"></i></span>Lock Liquidity</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link disabled"><span class="icon"> <i class="ti ti-robot"></i></span>SolMintBot<span class="status">SOON</span></a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseCreateLock" aria-expanded="false"><span class="icon"> <i class="ti ti-lock-access"></i></span>Lock Management<i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseCreateLock">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="lock-lp-token.html"><span class="icon"> <i class="ti ti-circle-key"></i></span>Lock Token</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="unlock.html"><span class="icon"> <i class="ti ti-cloud-lock"></i></span>Unlock Token</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="info-lock.html"><span class="icon"> <i class="ti ti-cloud-lock"></i></span>Lock Info</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item dropdown"><a class="navbar-link disabled" data-toggle="collapse" href="#collapseNFT" aria-expanded="false"><span class="icon"> <i class="ti ti-photo-heart"></i></span>NFT<span class="status">SOON</span></a>
+                      <div class="collapse" id="collapseNFT">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-brush"></i></span>Generate NFT</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-pointer"></i></span>Creat Mint</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-speakerphone"></i></span>Creat NFT presale</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-stairs"></i></span>Creat NFT staking</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" data-toggle="collapse" href="#collapseNFTManager" aria-expanded="false"><span class="icon"> <i class="ti ti-circles"></i></span>NFT manager<i class="far fa-angle-down"></i></a>
+                            <div class="collapse" id="collapseNFTManager">
+                              <ul class="navbar-dropdown"> 
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-moneybag"></i></span>Snapshot NFT holder</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-tournament"></i></span>NFT multisender</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-brand-databricks"></i></span>Update NFT metadata</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-matchstick"></i></span>NFT Incinerator</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-rocket"></i></span>Launchpad<span class="status">SOON</span></a></li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-chart-dots"></i></span>Trading Bot<span class="status">SOON</span></a></li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-hand-click"></i></span>SolClaim<span class="status">SOON</span></a></li>
+                  </ul>
+                </div>
+                <div class="banner-ads d-none d-xl-block"><img src="./images/banner-ads-1.png" width="100%" alt="ads"></div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-9">
+              <div class="content-wrapper home-wrapper"> 
+                <div class="content-submit"> 
+                  <h6 class="content-submit-title">Release Your Solana Project</h6>
+                  <h6 class="content-submit-title">In 30 seconds</h6>
+                  <p class="content-submit-desc">Solmint will do 100% of the code work for your Solana Project.</p>
+                </div>
+                <div class="home-controls py-4">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-6 col-lg-auto mb-4 mr-auto"><a class="btn btn-secondary" href="#!">Create Token </a></div>
+                    <div class="col-6 col-lg-auto mb-4"><a class="btn btn-secondary" href="#!">OpenBook Market </a></div>
+                    <div class="col-6 col-lg-auto mb-4 px-xl-0"><a class="btn btn-secondary" href="#!">Add Liquidity</a></div>
+                    <div class="col-6 col-lg-auto mb-4"><a class="btn btn-secondary" href="#!">Burn</a></div>
+                  </div>
+                </div>
+                <div class="home-banner pb-5">
+                  <div class="home-banner-wrapper">
+                    <div class="content"> 
+                      <div class="d-flex align-items-center gap-10">
+                        <h2>All-in-one</h2>
+                        <div class="tag-h2"><span>Token Tools </span></div>
+                      </div>
+                      <h1>Perfect solution </h1>
+                      <h3>
+                         for <span class="gradient">Solana Developer </span></h3><a class="btn btn-primary" href="#!">Mint Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-features py-5 my-5">
+                  <div class="home-features-title"> 
+                    <h3 class="title">OUTSTANDING FEATURES</h3>
+                    <p class="desc">Provide quality service beyond expectations</p>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-6 col-xl-4 mb-5">
+                      <div class="home-features-item"> <img class="logo" src="./images/home-features-icon-1.png" alt="feature-icon">
+                        <h6 class="title title-green">
+                           Sol<span>-Mint</span></h6>
+                        <p class="desc">Create Token and OpenBook Market in just 30 seconds</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-5">
+                      <div class="home-features-item"> <img class="logo" src="./images/home-features-icon-2.png" alt="feature-icon">
+                        <h6 class="title title-blue">
+                           Sol<span>-Liquidity</span></h6>
+                        <p class="desc">Create & manage LP on all Solana AMMs Dex by Solmint platform</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-5">
+                      <div class="home-features-item"> <img class="logo" src="./images/home-features-icon-3.png" alt="feature-icon">
+                        <h6 class="title title-purple">
+                           Sol<span>-Lock</span></h6>
+                        <p class="desc">Lock Tokens and Liquidity intelligently and flexibly</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-5">
+                      <div class="home-features-item"> <img class="logo" src="./images/home-features-icon-4.png" alt="feature-icon">
+                        <h6 class="title title-green">
+                           Sol<span>-NFT</span></h6>
+                        <p class="desc">Create NFTs, NFT Collections, and create Marketplace to trade NFTs</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-5">
+                      <div class="home-features-item"> <img class="logo" src="./images/home-features-icon-5.png" alt="feature-icon">
+                        <h6 class="title title-yellow">
+                           Sol<span>-Sale</span></h6>
+                        <p class="desc">Launchpad for potential projects on the Solana chain</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-5">
+                      <div class="home-features-item"> <img class="logo" src="./images/home-features-icon-1.png" alt="feature-icon">
+                        <h6 class="title title-purple">
+                           Sol<span>-Bot</span></h6>
+                        <p class="desc">SolBot allows making all requests through Telegram</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-flow py-5">
+                  <div class="home-flow-title"> 
+                    <h3 class="title">TOKEN FLOW </h3>
+                    <p class="desc">Save time and money </p>
+                  </div>
+                  <div class="home-flow-banner"> 
+                    <div class="row"> 
+                      <div class="col-12 col-xl-6 mb-5 pr-xl-0"><img src="./images/home-flow-banner-1.png" alt="Home Flow" height="100%" width="100%"></div>
+                      <div class="col-12 col-xl-6 mb-5"> <img src="./images/home-flow-banner-2.png" alt="Home Flow" height="100%" width="100%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-maps py-5">
+                  <div class="home-maps-title"> 
+                    <h3 class="title">ROAD MAPS </h3>
+                    <p class="desc">Provide quality service beyond expectations </p>
+                  </div>
+                  <div class="home-maps-phase"> 
+                    <div class="phase-item-wrap active">
+                      <div class="phase-line">
+                        <div class="line-top"> </div>
+                        <div class="line-bottom"></div>
+                      </div>
+                      <div class="phase-item">
+                        <h6 class="phase-item-title">Phase 1</h6>
+                        <ul class="phase-item-list">
+                          <li><span class="dot"></span>
+                            <p>SolMint : Token Creator (Token Mint, Update Metadata, Revoke & Immutable, Token Burn)</p>
+                          </li>
+                          <li><span class="dot"></span>
+                            <p>Openbook Market</p>
+                          </li>
+                          <li><span class="dot"></span>
+                            <p>Add Liquidity Pools on all Solana AMMs Dex (Raydium, Jupiter, Orca,...) via the Solmint Platform</p>
+                          </li>
+                          <li><span class="dot"></span>
+                            <p>Liquidity Management: Add more LP, Remove LP (Normal or Instant fast), Burn LP. </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="phase-item-wrap">
+                      <div class="phase-line">
+                        <div class="line-top"> </div>
+                        <div class="line-bottom"></div>
+                      </div>
+                      <div class="phase-item"> 
+                        <h6 class="phase-item-title">Phase 2</h6>
+                        <ul class="phase-item-list">
+                          <li><span class="dot"></span>
+                            <p>Creat Token 2022 Standard</p>
+                          </li>
+                          <li><span class="dot"></span>
+                            <p>SolLock: Lock Token and Liquidity</p>
+                          </li>
+                          <li><span class="dot"></span>
+                            <p>SolNFT: Generate NFT, Mint NFT, Creat NFT Presale, Creat NFT Staking, Snapshot NFT holder, NFT multisender, Update NFT metadata, Hashlist NFT, NFT incinerator</p>
+                          </li>
+                          <li><span class="dot"></span>
+                            <p>OutSource Service: Support, advise, design and program dApps according to the ideas and requirements of startup projects on Solana. </p>
+                          </li>
+                          <li><span class="dot"></span>
+                            <p>Multichain: TON , ETH, BSC </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="phase-item-wrap">
+                      <div class="phase-line">
+                        <div class="line-top"> </div>
+                        <div class="line-bottom"></div>
+                      </div>
+                      <div class="phase-item"> 
+                        <h6 class="phase-item-title">Phase 3</h6>
+                        <ul class="phase-item-list">
+                          <li><span class="dot"></span>
+                            <p>SolSale: The launchpad protocol for every project on Solana</p>
+                          </li>
+                          <li><span class="dot"></span>
+                            <p>SolAiTrading : AMM Dex automated trading bot on solana</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-partners py-5">
+                  <div class="home-partners-title">
+                    <h3 class="title">PARTNERS </h3>
+                    <p class="desc">Strong flatforem, market leading partner </p>
+                  </div>
+                  <div class="home-partners-sliders"> 
+                    <div class="slider-item"> <img src="./images/partner-logo-solana.png" alt=""></div>
+                    <div class="slider-item"> <img src="./images/partner-logo-solana.png" alt=""></div>
+                    <div class="slider-item"> <img src="./images/partner-logo-solana.png" alt=""></div>
+                    <div class="slider-item"> <img src="./images/partner-logo-solana.png" alt=""></div>
+                    <div class="slider-item"> <img src="./images/partner-logo-solana.png" alt=""></div>
+                    <div class="slider-item"> <img src="./images/partner-logo-solana.png" alt=""></div>
+                    <div class="slider-item"> <img src="./images/partner-logo-solana.png" alt=""></div>
+                    <div class="slider-item"> <img src="./images/partner-logo-solana.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="home-faq py-5 mt-5">
+                  <div class="home-faq-title"> 
+                    <h3 class="title">FAQ</h3>
+                    <p class="desc">Frequently asked questions</p>
+                  </div>
+                  <div class="home-faq-collapse">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+                           What is Solana Token Generator?<span class="icon-toggle"> <i class="far fa-plus-circle"></i></span></button>
+                      </div>
+                      <div class="collapse show" id="collapseOne" data-parent=".home-faq-collapse">
+                        <div class="card-body">
+                          <p>The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.</p>
+                          <p>This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                           Do I have full ownership of the generated token?<span class="icon-toggle"> <i class="far fa-plus-circle"></i></span></button>
+                      </div>
+                      <div class="collapse" id="collapseTwo" data-parent=".home-faq-collapse">
+                        <div class="card-body">
+                          <p>The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.</p>
+                          <p>This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                           How much time will Solana Token Generator here?<span class="icon-toggle"> <i class="far fa-plus-circle"></i></span></button>
+                      </div>
+                      <div class="collapse" id="collapseThree" data-parent=".home-faq-collapse">
+                        <div class="card-body">
+                          <p>The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.</p>
+                          <p>This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
+                           Mow much does the Solana Token Generator Cost?<span class="icon-toggle"> <i class="far fa-plus-circle"></i></span></button>
+                      </div>
+                      <div class="collapse" id="collapseFour" data-parent=".home-faq-collapse">
+                        <div class="card-body">
+                          <p>The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.</p>
+                          <p>This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
+                           How does Solmint work?<span class="icon-toggle"> <i class="far fa-plus-circle"></i></span></button>
+                      </div>
+                      <div class="collapse" id="collapseFive" data-parent=".home-faq-collapse">
+                        <div class="card-body">
+                          <p>The Solana Token Creator is a smart contract enabling anyone, regardless of coding experience, to generate SPL Tokens (tokens from Solana Chain) tailored to their preferences, including supply, name, symbol, description, and image.</p>
+                          <p>This streamlined process is both faster and more cost-effective than alternative methods, as it operates automatically. Rest assured, this tool is entirely secure, having undergone audits by various development teams, and is trusted by some of the largest Solana projects.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="container"> 
+          <div class="row align-items-center justify-content-between"> 
+            <div class="col-12 col-xl-3">
+              <div class="logo mb-4"><img src="./images/logo-footer.png" alt="Footer Logo"></div>
+              <p class="copy-right text-white my-4">© 2024 SOLMINT v1.1. All rights reserved.</p>
+              <p class="copy-right text-white">Powered by SolMintLab.</p>
+            </div>
+            <div class="col-12 col-xl-4 pt-5 pt-xl-0">
+              <div class="socials text-xl-right">
+                <p>Join our community</p>
+                <div class="socials-list d-flex align-items-center justify-content-xl-end"><a href="#!"><i class="fab fa-youtube"></i></a><a href="#!"><i class="fab fa-instagram"></i></a><a href="#!"><i class="fab fa-twitter"></i></a><a href="#!"><i class="fab fa-discord"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal modal-popup" tabindex="-1" id="modalConnectWallet">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header"><img src="./images/logo.png" alt="" width="100px">
+              <button class="close btn btn-icon" type="button" data-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Connect a wallet on Solana to continue</h3>
+              <form class="form-modal" action="">
+                <div class="form-select"> 
+                  <div class="item-select"> 
+                    <div class="icon"> </div><span>Phantom</span>
+                  </div>
+                </div>
+                <div class="form-select"> 
+                  <div class="item-select"> 
+                    <div class="icon"> </div><span>Metamask</span>
+                  </div>
+                </div>
+                <button class="btn btn-primary w-100" type="submit"> Connect</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@1.74.0/icons-react/dist/index.umd.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

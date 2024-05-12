@@ -1,0 +1,94 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'openbook-market'
+	-pageName= 'Openbook Market'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-9.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-10.mx-auto
+								h6.content-submit-title Create Openbook Market
+								p.content-submit-desc Use the default mode, the cost will be the lowest. Just fill in the contract token and then click "Create Openbook Market"
+								form(action="" class="form-submit")
+									.row.mb-5
+										.col-12.col-xl-6.description-form
+											h3 Mints
+											p Configure the mints for the tokens you want to create a market for
+										.col-12.col-xl-6
+											.form-group 
+												label(for="") Base mint
+												input(type="text" class="form-control" placeholder="Enter your SPL-Token address")
+											.form-group 
+												label(for="") Quote mint
+												input(type="text" class="form-control" value="So11111111111111111111111111111111111111112")
+									.row.mb-5
+										.col-12.col-xl-6.description-form 
+											h3 Tickers
+											p Configure the tick sizes, or lowest representable quantities of base and quote tokens.
+										.col-12.col-xl-6
+											.form-row
+												.col-6.form-group 
+													label(for="") Min. Order Size
+													.number-input
+														button(type="button" class="arrow arrow-plus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+															i.ti.ti-arrow-badge-up
+														input(type="number" min='0' value="1" class="form-control" placeholder="1e-x")
+														button(type="button" class="arrow arrow-minus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+															i.ti.ti-arrow-badge-down
+												.col-6.form-group 
+													label(for="") Price Tick
+													.number-input
+														button(type="button" class="arrow arrow-plus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+															i.ti.ti-arrow-badge-up
+														input(type="number" min='0' value="1" class="form-control" placeholder="1e-x")
+														button(type="button" class="arrow arrow-minus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+															i.ti.ti-arrow-badge-down
+									.row.mb-5
+										.col-12.col-xl-6.description-form 
+											h3 Advanced Options
+											p Configure sizes for the different accounts used to create the market to adjust rent cost.
+											.total-rent-estimate 
+												h3 Total Rent Estimate:
+												p.py-3 Change the default, please adjust the parameters below; the fee will change depending on your chosen option
+												.result.d-flex.align-items-center.gap-10
+													button(type="button" class="btn btn-secondary btn-secondary-small")
+														i.ti.ti-refresh 
+														| Estimate
+													span.text-gradient-primary 0.52 SOL
+										.col-12.col-xl-6
+											.description-form-small
+												h6 Use Advanced Options
+												p Set custom sizes for market accounts.
+											.form-group 
+												label(for="") Event Queue Length
+												input(type="text" class="form-control" placeholder="203")
+												p.input-note 262108 bytes
+											.form-group 
+												label(for="") Request Queue Length
+												input(type="text" class="form-control" placeholder="9")
+												p.input-note 5084 bytes
+											.form-group 
+												label(for="") Orderbook Length
+												input(type="text" class="form-control" placeholder="201")
+												p.input-note 65500 bytes
+									.alert-form.mb-4
+										.alert.alert-warning.alert-dismissible.fade.show(role="alert") 
+											.content.d-flex.align-items-center.gap-5
+												.icon 
+													i.ti.ti-alert-triangle
+												p Please do not switch tabs during Openbook Market creation!
+											button(type="button" class="close" data-dismiss="alert")
+												i.ti.ti-x
+									button(type="submit" class="btn btn-secondary w-100") Connect Wallet

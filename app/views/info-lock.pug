@@ -1,0 +1,72 @@
+extends layout/layout
+
+block vars
+	-title = 'SOLMINT'
+	-bodyClass = 'content-page'
+	-page= 'info-lock'
+	-pageName= 'Info Lock'
+
+block container
+	.main-content.py-0
+		.container 
+			.row 	
+				.col-12.col-xl-3
+					.sidebar-left
+						include ./blocks/navbar
+						.banner-ads.d-none.d-xl-block
+							img(src="./images/banner-ads-1.png", width="100%", alt="ads")
+				.col-12.col-xl-6.content-background-center
+					.content-wrapper 
+						.content-submit 
+							.col-12.col-xl-8.mx-auto
+								h6.content-submit-title Info Token
+								p.content-submit-desc Info Token Lock
+								form(action="" class="form-submit")
+									.form-group.mb-5 
+										label(for="") Lock address
+										input(type="text" class="form-control" placeholder="Enter lock address")
+									button(type="submit" class="btn btn-secondary w-100") Load Info
+								form(action="" class="form-submit") 
+									.form-group.my-5
+										label(for="") Token Address
+										input(type="text" class="form-control" placeholder="Enter token address")
+									.form-group-info 
+										.item.item-owner 
+											p.title Owner
+											h3.value Name Provip 123
+										.item.item-token-address 
+											p.title Token address
+											h3.value.copy.d-flex.align-items-center.justify-content-between
+												span.token-address 56415465456456445456
+												button(type="button" class="btn btn-copy") 
+													i.ti.ti-copy
+										.item.item-unlock-time.d-flex.align-items-center.justify-content-between
+											p.title Unlock time
+											h3.value 10 Days
+										.item.item-amount.d-flex.align-items-center.justify-content-between
+											p.title Amount
+											h2.value 2.1223
+				.col-12.col-xl-3
+					.step-bar 
+						h6.step-bar-title How does it work?
+						.step-bar-list 
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Connect your Solana Wallet
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Enter your Seed Key
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Enter Token Address
+							.item.tall
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Click SUBMIT button
+							.item 
+								span.icon 
+									img(src="./images/icons/check-icon.png", alt="")
+								p Accept the transaction and wait until the transaction is completed

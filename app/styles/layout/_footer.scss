@@ -1,0 +1,27 @@
+.main-footer {
+    background: var(--footer-bg);
+    padding-block: 60px;
+
+    .copy-right {
+        font-size: 12px;
+        color: var(--white-flight);
+    }
+
+    .socials {
+        p {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        &-list {
+            gap: 22px;
+            a {
+                color: #fff;
+                font-size: 28px;
+            }
+        }
+    }
+}
