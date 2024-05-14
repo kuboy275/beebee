@@ -9,8 +9,8 @@ block vars
 block container
 	.main-content.py-0
 		.container 
-			.row 	
-				.col-12.col-xl-3
+			.row.flex-xl-nowrap 	
+				.col-12.col-xl-auto.menu-section
 					.sidebar-left
 						include ./blocks/navbar
 						.banner-ads.d-none.d-xl-block
@@ -46,7 +46,7 @@ block container
 										.item.item-amount.d-flex.align-items-center.justify-content-between
 											p.title Amount
 											h2.value 2.1223
-				.col-12.col-xl-3
+				.col-12.col-xl-3.right-section
 					.step-bar 
 						h6.step-bar-title How does it work?
 						.step-bar-list 

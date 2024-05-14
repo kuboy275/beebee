@@ -203,6 +203,11 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
 // Navbar
+
+.menu-section {
+    background: #F1F5F9;
+}
+
 .sidebar-left {
     width: 265px;
     .navbar-menu-left {
@@ -380,7 +385,7 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 
 
 .page-wrapper {
-    background: #FCFDFE;
+    background: #F1F5F9;
 
 }
 
@@ -399,6 +404,7 @@ body.home-page {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
+
 
     @media only screen and (max-width:767px) {
         padding: 20px;
@@ -425,6 +431,15 @@ body.home-page {
         color: var(--text-black);
         margin-bottom: 20px;
     }
+}
+
+
+.right-section {
+    background: #FFF;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    border-radius: 0 0 10px 10px;
+    margin-left: auto;
 }
 
 .step-bar {
@@ -743,6 +758,21 @@ body.home-page {
                 &::after {
                     left: calc(100% - 18px);
                     background: var(--white-smoke);
+                }
+            }
+        }
+        &.mint-remoke-authority {
+            span.status {
+                color: #6C40BF;
+            }
+            label {
+                &::after {
+                    background: #6C40BF;
+                }
+            }
+            input[type="checkbox"] {
+                &:checked + label {
+                    background: #6C40BF;
                 }
             }
         }

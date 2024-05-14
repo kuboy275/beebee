@@ -9,8 +9,8 @@ block vars
 block container
 	.main-content.py-0
 		.container 
-			.row 	
-				.col-12.col-xl-3
+			.row.flex-xl-nowrap 	
+				.col-12.col-xl-auto.menu-section
 					.sidebar-left
 						include ./blocks/navbar
 						.banner-ads.d-none.d-xl-block
@@ -50,20 +50,20 @@ block container
 									button(type="submit" class="btn btn-secondary w-100") Connect Wallet
 									.form-row.py-4
 										.col-4
-											.form-group.form-check
+											.form-group.form-check.mint-remoke-authority
 												span.label Revoke Freeze
 												input(type="checkbox" id="revoke-freeze" checked)
 												label(for="revoke-freeze" ) 
 												span.status FREE
 										.col-4
-											.form-group.form-check
+											.form-group.form-check.mint-remoke-authority
 												span.label Revoke Freeze
 												input(type="checkbox" id="revoke-mint" checked)
 												label(for="revoke-mint" ) 
 												span.status FREE
 									button(type="submit" class="btn btn-secondary w-100") Connect Wallet
 								
-				.col-12.col-xl-3
+				.col-12.col-xl-3.right-section
 					.step-bar 
 						h6.step-bar-title How to use Revoke Authority
 						.step-bar-list 

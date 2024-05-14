@@ -9,8 +9,8 @@ block vars
 block container
 	.main-content.py-0
 		.container 
-			.row 	
-				.col-12.col-xl-3
+			.row.flex-xl-nowrap 	
+				.col-12.col-xl-auto.menu-section
 					.sidebar-left
 						include ./blocks/navbar
 						.banner-ads.d-none.d-xl-block
@@ -57,7 +57,7 @@ block container
 											button.btn.btn-secondary.btn-secondary-small.btn-copy(type="button") 
 												i.ti.ti-copy.mr-3
 												| Copy
-				.col-12.col-xl-3
+				.col-12.col-xl-3.right-section
 					.step-bar 
 						h6.step-bar-title How to Lock LP
 						.step-bar-list 

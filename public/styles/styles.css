@@ -53,24 +53,6 @@ html {
       display: none;
       font-size: 22px; }
 
-.main-footer {
-  background: var(--footer-bg);
-  padding-block: 60px; }
-  .main-footer .copy-right {
-    font-size: 12px;
-    color: var(--white-flight); }
-  .main-footer .socials p {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    color: #fff;
-    margin-bottom: 20px; }
-  .main-footer .socials-list {
-    gap: 22px; }
-    .main-footer .socials-list a {
-      color: #fff;
-      font-size: 28px; }
-
 body {
   font-family: "Lexend", sans-serif; }
 
@@ -242,6 +224,9 @@ body {
   .btn-icon:hover {
     color: var(--white-smoke); }
 
+.menu-section {
+  background: #F1F5F9; }
+
 .sidebar-left {
   width: 265px; }
   .sidebar-left .navbar-menu-left {
@@ -370,7 +355,7 @@ body {
           overflow-y: auto; } }
 
 .page-wrapper {
-  background: #FCFDFE; }
+  background: #F1F5F9; }
 
 body.home-page .page-wrapper {
   background-image: url("../images/main-bg-2.png");
@@ -404,6 +389,13 @@ body.home-page .page-wrapper {
     line-height: 20px;
     color: var(--text-black);
     margin-bottom: 20px; }
+
+.right-section {
+  background: #FFF;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  border-radius: 0 0 10px 10px;
+  margin-left: auto; }
 
 .step-bar {
   padding-bottom: 25px; }
@@ -666,6 +658,12 @@ body.home-page .page-wrapper {
       .form-submit .form-check input[type="checkbox"]:checked + label::after {
         left: calc(100% - 18px);
         background: var(--white-smoke); }
+  .form-submit .form-check.mint-remoke-authority span.status {
+    color: #6C40BF; }
+  .form-submit .form-check.mint-remoke-authority label::after {
+    background: #6C40BF; }
+  .form-submit .form-check.mint-remoke-authority input[type="checkbox"]:checked + label {
+    background: #6C40BF; }
 
 .form-submit .form-upload-file .label-upload-logo {
   width: 100%;

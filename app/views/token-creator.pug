@@ -9,8 +9,8 @@ block vars
 block container
 	.main-content.py-0
 		.container 
-			.row 	
-				.col-12.col-xl-3
+			.row.flex-xl-nowrap 	
+				.col-12.col-xl-auto.menu-section
 					.sidebar-left
 						include ./blocks/navbar
 						.banner-ads.d-none.d-xl-block
@@ -93,7 +93,7 @@ block container
 										input(type="text" class="form-control" placeholder="Your token address")
 									button(type="submit" class="btn btn-secondary w-100 my-3") Coppy your token address
 									button(type="submit" class="btn btn-secondary w-100") Create open book market now
-				.col-12.col-xl-3
+				.col-12.col-xl-3.right-section
 					.step-bar 
 						h6.step-bar-title How to use SPL-Token Creator
 						.step-bar-list 

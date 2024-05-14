@@ -9,8 +9,8 @@ block vars
 block container
 	.main-content.py-0
 		.container 
-			.row 	
-				.col-12.col-xl-3
+			.row.flex-xl-nowrap 	
+				.col-12.col-xl-auto.menu-section
 					.sidebar-left
 						include ./blocks/navbar
 						.banner-ads.d-none.d-xl-block
@@ -42,7 +42,7 @@ block container
 													span 18.7685 
 													button(type="button" class="btn btn-secondary btn-secondary-small") MAX
 									button(type="submit" class="btn btn-secondary w-100 mt-5") Withdraw Liquidity Pool
-				.col-12.col-xl-3
+				.col-12.col-xl-3.right-section
 					.nav-tab-section 
 						ul#myTab.nav.nav-tabs(role='tablist')
 							li.nav-item(role='presentation')
