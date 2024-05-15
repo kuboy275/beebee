@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bee Bee</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body class="content-page">
+    <div class="page-wrapper">
+      <header class="main-header">
+        <div class="container py-4 py-xl-3">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto d-block d-xl-none">
+              <button class="btn btn-icon btn-open-menu"><img class="icon-open" src="./images/icons/bars-icon.png" alt=""><i class="fal fa-times icon-close"></i></button>
+            </div>
+            <div class="col-auto col-xl-3"> <a class="logo" href="./index.html"><img class="logo-desktop" src="./images/logo.png" alt="Logo"></a></div>
+            <div class="col-12 col-xl-5 d-none d-xl-block">
+              <div class="bread-crumbs d-flex flex-column"> 
+                <h6 class="title-page">SOLMINT</h6>
+                <ul class="bread-crumbs-list d-flex align-items-center">
+                  <li> <span>Home/</span></li>
+                  <li> <span>Token Manager/</span></li>
+                  <li> <span class="active">Token Burn</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto col-xl-4 pl-0">
+              <div class="d-flex align-items-center justify-content-end gap-20">
+                <div class="logo d-none d-xl-block"><img src="./images/logo-solana.png" alt="Solana Logo"></div><a class="btn btn-primary btn-connect-wallet" href="#!" data-toggle="modal" data-target="#modalConnectWallet"> <i class="fas fa-wallet img-desktop d-block d-xl-none"></i><span class="d-none d-xl-block">Connect wallet</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-content py-0">
+        <div class="container-fluid"> 
+          <div class="row flex-xl-nowrap">	
+            <div class="col-12 col-xl-auto menu-section">
+              <div class="sidebar-left">
+                <div class="navbar-menu-left">
+                  <ul class="navbar-wrapper"> 
+                    <li class="navbar-item"> <a class="navbar-link" href="./index.html"><span class="icon"> <i class="ti ti-home-2"></i></span>Home </a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseTokenManager" aria-expanded="false"><span class="icon"> <i class="ti ti-coins"></i></span>Token Management <i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseTokenManager">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="token-creator.html"><span class="icon"> <i class="ti ti-vector"></i></span>Token Creator <span class="status-ic"> <img src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="mint-revoke-authority.html"><span class="icon"> <i class="ti ti-businessplan"></i></span>Mint, Revoke Authority </a></li>
+                          <li class="navbar-item"> <a class="navbar-link active" href="./token-burn.html"><span class="icon"> <i class="ti ti-flame"></i></span>Token Burn</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="./update-metadata.html"><span class="icon"> <i class="ti ti-edit-circle"></i></span>Update Metadata</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="multi-sender.html"><span class="icon"> <i class="ti ti-users-group"></i></span>Multisender</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="./openbook-market.html"><span class="icon"> <i class="ti ti-building-store"></i></span>Create Openbook Market<span class="status-ic"> <img src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseLpManagement" aria-expanded="false"><span class="icon"> <i class="ti ti-droplet"></i></span>LP Management<i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseLpManagement">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="./create-liquidity-pool.html"><span class="icon"> <i class="ti ti-bucket-droplet"></i></span>Create Liquidity Pool</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="./add-liquidity-pool.html"><span class="icon"> <i class="ti ti-droplet-up"></i></span>Add More Liquidity Pool</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="./remove-liquidity-pool.html"><span class="icon"> <i class="ti ti-droplet-x"></i></span>Remove Liquidity Pool</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-campfire"></i></span>Burn Liquidity<span class="status-ic"> <img src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-lock"></i></span>Lock Liquidity</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link disabled"><span class="icon"> <i class="ti ti-robot"></i></span>SolMintBot<span class="status">SOON</span></a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseCreateLock" aria-expanded="false"><span class="icon"> <i class="ti ti-lock-access"></i></span>Lock Management<i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseCreateLock">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="lock-lp-token.html"><span class="icon"> <i class="ti ti-circle-key"></i></span>Lock Token</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="unlock.html"><span class="icon"> <i class="ti ti-cloud-lock"></i></span>Unlock Token</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="info-lock.html"><span class="icon"> <i class="ti ti-cloud-lock"></i></span>Lock Info</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item dropdown"><a class="navbar-link disabled" data-toggle="collapse" href="#collapseNFT" aria-expanded="false"><span class="icon"> <i class="ti ti-photo-heart"></i></span>NFT<span class="status">SOON</span></a>
+                      <div class="collapse" id="collapseNFT">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-brush"></i></span>Generate NFT</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-pointer"></i></span>Creat Mint</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-speakerphone"></i></span>Creat NFT presale</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-stairs"></i></span>Creat NFT staking</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" data-toggle="collapse" href="#collapseNFTManager" aria-expanded="false"><span class="icon"> <i class="ti ti-circles"></i></span>NFT manager<i class="far fa-angle-down"></i></a>
+                            <div class="collapse" id="collapseNFTManager">
+                              <ul class="navbar-dropdown"> 
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-moneybag"></i></span>Snapshot NFT holder</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-tournament"></i></span>NFT multisender</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-brand-databricks"></i></span>Update NFT metadata</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-matchstick"></i></span>NFT Incinerator</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-rocket"></i></span>Launchpad<span class="status">SOON</span></a></li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-chart-dots"></i></span>Trading Bot<span class="status">SOON</span></a></li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-hand-click"></i></span>SolClaim<span class="status">SOON</span></a></li>
+                  </ul>
+                </div>
+                <div class="banner-ads d-none d-xl-block"><img src="./images/banner-ads-1.png" width="100%" alt="ads"></div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6 content-background-center">
+              <div class="content-wrapper"> 
+                <div class="content-submit"> 
+                  <div class="col-12 col-xl-8 mx-auto">
+                    <h6 class="content-submit-title">Burn SPL-Token</h6>
+                    <p class="content-submit-desc">Easy to burn SPL-Token with 1 click !</p>
+                    <form class="form-submit" action="">
+                      <div class="form-group"> 
+                        <label for="">Token Address</label>
+                        <input class="form-control" type="text" placeholder="Enter token name">
+                      </div>
+                      <div class="form-group"> 
+                        <label for="">Amount</label>
+                        <input class="form-control" type="text" placeholder="1.000.000.000">
+                      </div>
+                      <button class="btn btn-secondary w-100 mt-5" type="submit">Connect Wallet</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-3 right-section">
+              <div class="nav-tab-section"> 
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="w-100 nav-link active" data-toggle="tab" data-target="#spl-token" type="button" role="tab" aria-selected="true">Burn SPL-Token</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="w-100 nav-link" data-toggle="tab" data-target="#lp-token" type="button" role="tab" aria-selected="false">Burn LP-Token</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="spl-token">
+                    <div class="step-bar"> 
+                      <h6 class="step-bar-title">How to use SPL-Token Creator</h6>
+                      <div class="step-bar-list"> 
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Connect your Solana wallet</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Select the Token from your wallet</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Enter the amount of SPL tokens you want to burn</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Accept the Transaction</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Wait a second</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="lp-token">
+                    <div class="step-bar"> 
+                      <h6 class="step-bar-title">How to use Burn LP-Token</h6>
+                      <div class="step-bar-list"> 
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Connect your Solana wallet</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Select the Token from your wallet </p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Enter the amount of LP token you want to burn</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Accept the Transaction</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                          <p>Wait a second</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-popup" tabindex="-1" id="modalConnectWallet">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header"><img src="./images/logo.png" alt="" width="100px">
+              <button class="close btn btn-icon" type="button" data-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Connect a wallet on Solana to continue</h3>
+              <form class="form-modal" action="">
+                <div class="form-select"> 
+                  <div class="item-select"> 
+                    <div class="icon"> </div><span>Phantom</span>
+                  </div>
+                </div>
+                <div class="form-select"> 
+                  <div class="item-select"> 
+                    <div class="icon"> </div><span>Metamask</span>
+                  </div>
+                </div>
+                <button class="btn btn-primary w-100" type="submit"> Connect</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@1.74.0/icons-react/dist/index.umd.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
