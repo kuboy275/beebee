@@ -1,3 +1,4 @@
+@import 'reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import "helpers/variables";
 @import "helpers/mixins";
@@ -57,8 +58,8 @@ body {
         }
     }
     .modal-content {
-        background: #1F1D20;
-        color: #fff;
+        background: #FCFDFE;
+        color: var(--text-black);
         padding: 20px;
     }
     .modal-header {
@@ -101,6 +102,7 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
                     font-size: 16px;
                     font-weight: 600;
                     line-height: 24px;
+                    color: white;
                 }
             }
         }
@@ -205,7 +207,10 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 // Navbar
 
 .menu-section {
-    background: #F1F5F9;
+    background: #FFF;
+    @media only screen and (min-width:1200px) {
+        padding-inline: 25px;
+    }
 }
 
 .sidebar-left {
@@ -435,11 +440,12 @@ body.home-page {
 
 
 .right-section {
-    background: #FFF;
+    background: #FCFDFE;
     margin-bottom: 20px;
     padding-top: 15px;
     border-radius: 0 0 10px 10px;
     margin-left: auto;
+    margin-right: 15px;
 }
 
 .step-bar {
