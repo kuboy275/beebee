@@ -9,7 +9,7 @@ block vars
 block container
 	.main-content.py-0
 		.container-fluid 
-			.row.flex-xl-nowrap 	
+			.row.flex-xl-nowrap.justify-content-xl-between 	
 				.col-12.col-xl-auto.menu-section
 					.sidebar-left
 						include ./blocks/navbar
@@ -50,13 +50,13 @@ block container
 									button(type="submit" class="btn btn-secondary w-100") Connect Wallet
 									.form-row.py-4
 										.col-4
-											.form-group.form-check.mint-remoke-authority
+											.form-group.form-check
 												span.label Revoke Freeze
 												input(type="checkbox" id="revoke-freeze" checked)
 												label(for="revoke-freeze" ) 
 												span.status FREE
 										.col-4
-											.form-group.form-check.mint-remoke-authority
+											.form-group.form-check
 												span.label Revoke Freeze
 												input(type="checkbox" id="revoke-mint" checked)
 												label(for="revoke-mint" ) 
