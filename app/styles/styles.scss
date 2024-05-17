@@ -215,6 +215,10 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
 }
 
+body.token-creator .sidebar-left .navbar-menu-left .menu-support {
+    margin-top: 100%;
+}
+
 .sidebar-left {
     width: 265px;
     .navbar-menu-left {
@@ -434,6 +438,11 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
                     justify-content: center;
                     background: rgba(239, 242, 244, 1);
                     border-radius: 4px;
+                    &:hover {
+                        img {
+                            filter: brightness(0) saturate(100%) invert(30%) sepia(66%) saturate(1945%) hue-rotate(243deg) brightness(78%) contrast(91%);
+                        }
+                    }
                 }
             }
     
@@ -599,6 +608,11 @@ body.home-page {
                     justify-content: center;
                     background: rgba(239, 242, 244, 1);
                     border-radius: 4px;
+                    &:hover {
+                        img {
+                            filter: brightness(0) saturate(100%) invert(30%) sepia(66%) saturate(1945%) hue-rotate(243deg) brightness(78%) contrast(91%);
+                        }
+                    }
                 }
             }
         }

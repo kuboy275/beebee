@@ -385,6 +385,9 @@ body {
       padding-inline: 25px;
       max-width: 315px; } }
 
+body.token-creator .sidebar-left .navbar-menu-left .menu-support {
+  margin-top: 100%; }
+
 .sidebar-left {
   width: 265px; }
   .sidebar-left .navbar-menu-left {
@@ -580,6 +583,9 @@ body {
           justify-content: center;
           background: #eff2f4;
           border-radius: 4px; }
+          .sidebar-left .navbar-menu-left .menu-support .support-socials a:hover img {
+            -webkit-filter: brightness(0) saturate(100%) invert(30%) sepia(66%) saturate(1945%) hue-rotate(243deg) brightness(78%) contrast(91%);
+            filter: brightness(0) saturate(100%) invert(30%) sepia(66%) saturate(1945%) hue-rotate(243deg) brightness(78%) contrast(91%); }
       .sidebar-left .navbar-menu-left .menu-support .support-languagues .nav-tabs {
         border-radius: 4px;
         background: #f1f5f9;
@@ -739,6 +745,9 @@ body.home-page .home-page-section {
         justify-content: center;
         background: #eff2f4;
         border-radius: 4px; }
+        body.home-page .home-page-section .home-banner .support-socials a:hover img {
+          -webkit-filter: brightness(0) saturate(100%) invert(30%) sepia(66%) saturate(1945%) hue-rotate(243deg) brightness(78%) contrast(91%);
+          filter: brightness(0) saturate(100%) invert(30%) sepia(66%) saturate(1945%) hue-rotate(243deg) brightness(78%) contrast(91%); }
 
 .content-background-center {
   background-image: url("../images/main-bg-2.png");
