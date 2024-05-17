@@ -390,8 +390,7 @@ body {
   .sidebar-left .navbar-menu-left {
     padding: 0px;
     display: block;
-    width: 100%;
-    margin-bottom: 100px; }
+    width: 100%; }
     .sidebar-left .navbar-menu-left .navbar-wrapper .navbar-item .navbar-link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -511,39 +510,28 @@ body {
         .sidebar-left .navbar-menu-left .navbar-wrapper {
           height: 90vh;
           overflow-y: auto; } }
-
-.page-wrapper {
-  background: #F1F5F9; }
-
-body.home-page .page-wrapper {
-  background-image: none; }
-
-@media only screen and (min-width: 1200px) {
-  body.home-page .menu-section {
-    height: 100vh; } }
-
-body.home-page .menu-support {
-  margin-block: auto 30px;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  @media only screen and (max-width: 1200px) {
-    body.home-page .menu-support {
-      display: none; } }
-  body.home-page .menu-support .support-chat:hover img {
-    -webkit-animation: 1s linear infinite fly-chat-icon;
-    animation: 1s linear infinite fly-chat-icon; }
+    .sidebar-left .navbar-menu-left .menu-support {
+      margin-block: 100px 30px;
+      padding-bottom: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      @media only screen and (max-width: 1200px) {
+        .sidebar-left .navbar-menu-left .menu-support {
+          margin-top: 30px; } }
+      .sidebar-left .navbar-menu-left .menu-support .support-chat:hover img {
+        -webkit-animation: 1s linear infinite fly-chat-icon;
+        animation: 1s linear infinite fly-chat-icon; }
 
 @-webkit-keyframes fly-chat-icon {
   0% {
@@ -566,50 +554,60 @@ body.home-page .menu-support {
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); } }
-  body.home-page .menu-support .support-socials {
-    margin-block: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    gap: 10px; }
-    body.home-page .menu-support .support-socials a {
-      width: 40px;
-      height: 40px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      background: #eff2f4;
-      border-radius: 4px; }
-  body.home-page .menu-support .support-languagues .nav-tabs {
-    border-radius: 4px;
-    background: #f1f5f9;
-    border: 1px solid #e3e9ee;
-    padding: 5px;
-    -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset;
-    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset; }
-    body.home-page .menu-support .support-languagues .nav-tabs .nav-item .nav-link {
-      background-color: transparent;
-      color: var(--text-black);
-      font-size: 14px;
-      font-weight: 600;
-      padding: 6px 22px; }
-      body.home-page .menu-support .support-languagues .nav-tabs .nav-item .nav-link.active {
-        -webkit-box-shadow: 0px 16px 16px -4px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 16px 16px -4px rgba(0, 0, 0, 0.1);
-        background: #fcfdfe;
-        border-radius: 6px; }
+      .sidebar-left .navbar-menu-left .menu-support .support-socials {
+        margin-block: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 10px; }
+        .sidebar-left .navbar-menu-left .menu-support .support-socials a {
+          width: 40px;
+          height: 40px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          background: #eff2f4;
+          border-radius: 4px; }
+      .sidebar-left .navbar-menu-left .menu-support .support-languagues .nav-tabs {
+        border-radius: 4px;
+        background: #f1f5f9;
+        border: 1px solid #e3e9ee;
+        padding: 5px;
+        -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset;
+        box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset; }
+        .sidebar-left .navbar-menu-left .menu-support .support-languagues .nav-tabs .nav-item .nav-link {
+          background-color: transparent;
+          color: var(--text-black);
+          font-size: 14px;
+          font-weight: 600;
+          padding: 6px 22px; }
+          .sidebar-left .navbar-menu-left .menu-support .support-languagues .nav-tabs .nav-item .nav-link.active {
+            -webkit-box-shadow: 0px 16px 16px -4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 16px 16px -4px rgba(0, 0, 0, 0.1);
+            background: #fcfdfe;
+            border-radius: 6px; }
+
+.page-wrapper {
+  background: #F1F5F9; }
+
+body.home-page .page-wrapper {
+  background-image: none; }
+
+@media only screen and (min-width: 1200px) {
+  body.home-page .menu-section {
+    height: 100vh; } }
 
 body.home-page .home-page-section {
   width: calc(100% - 300px);
