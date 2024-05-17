@@ -38,9 +38,20 @@
 
     .btn-open-menu {
         padding: 12px;
-        background: #1F1D20;
+        background: var(--white-smoke);
+        color: var(--text-black);
         width: 48px;
         height: 48px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            line-height: 0;
+        }
+        &:hover {
+            color: var(--text-black);
+        }
         &.opened {
             .icon-open {
                 display: none;
