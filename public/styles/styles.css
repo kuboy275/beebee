@@ -541,6 +541,31 @@ body.home-page .menu-support {
   @media only screen and (max-width: 1200px) {
     body.home-page .menu-support {
       display: none; } }
+  body.home-page .menu-support .support-chat:hover img {
+    -webkit-animation: 1s linear infinite fly-chat-icon;
+    animation: 1s linear infinite fly-chat-icon; }
+
+@-webkit-keyframes fly-chat-icon {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@keyframes fly-chat-icon {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
   body.home-page .menu-support .support-socials {
     margin-block: 20px;
     display: -webkit-box;

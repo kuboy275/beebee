@@ -417,6 +417,27 @@ body.home-page {
         @media only screen and (max-width:1200px) {
             display: none;
         }
+
+        .support-chat {
+            &:hover {
+                img {
+                    animation: 1s linear infinite fly-chat-icon;
+                }
+            }
+
+            @keyframes fly-chat-icon{
+                0% {
+                    transform: translateY(0px);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+        }
+
         .support-socials {
             margin-block: 20px;
             display: flex;
