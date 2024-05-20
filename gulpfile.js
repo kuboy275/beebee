@@ -27,7 +27,7 @@ const options = {
     dest: "public/styles",
   },
   images: {
-    src: "app/images/*.+(png|jpeg|jpg|gif|svg)",
+    src: ["app/images/*.+(png|jpeg|jpg|gif|svg)", "app/images/**"],
     dest: "public/images",
   },
   fonts: {

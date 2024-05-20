@@ -44,15 +44,6 @@
 								i.ti.ti-users-group
 							| Multisender
 		
-		//- Openbook Market
-		li.navbar-item 
-			a.navbar-link(href="./openbook-market.html" class=(page === 'openbook-market' ? 'active' : ''))
-				span.icon 
-					i.ti.ti-building-store
-				| Create Openbook Market
-				span.status-ic 
-					img(src="./images/icons/flame-filled-ic.png", alt="")
-		
 		//- LP Management
 		li.navbar-item.dropdown
 			a.navbar-link(data-toggle="collapse" href="#collapseLpManagement" aria-expanded="false")
@@ -89,14 +80,15 @@
 							span.icon 
 								i.ti.ti-lock
 							| Lock Liquidity
-	   
-		//- SolMintBot
+
+		//- Openbook Market
 		li.navbar-item 
-			a.navbar-link.disabled
+			a.navbar-link(href="./openbook-market.html" class=(page === 'openbook-market' ? 'active' : ''))
 				span.icon 
-					i.ti.ti-robot
-				| SolMintBot
-				span.status SOON
+					i.ti.ti-building-store
+				| Create Openbook Market
+				span.status-ic 
+					img(src="./images/icons/flame-filled-ic.png", alt="")
 
 		//- Lock Management
 		li.navbar-item.dropdown
@@ -123,88 +115,49 @@
 								i.ti.ti-cloud-lock
 							| Lock Info
 
+		//- Snipe Block-0
+		li.navbar-item.dropdown
+			a.navbar-link(href="#!")
+				span.icon 
+					i.ti.ti-building-store
+				| Snipe Block-0
+		
+		//- Bee TradingBot
+		li.navbar-item.dropdown
+			a.navbar-link(href="#!")
+				span.icon 
+					i.ti.ti-robot
+				| Bee TradingBot
+
+		//- Deployer Auto Bot
+		li.navbar-item.dropdown
+			a.navbar-link(href="#!")
+				span.icon 
+					i.ti.ti-battery-automotive
+				| Deployer Auto Bot
+
 		//- NFT
 		li.navbar-item.dropdown
-			a.navbar-link.disabled(data-toggle="collapse" href="#collapseNFT" aria-expanded="false")
+			a.navbar-link(href="#!")
 				span.icon 
 					i.ti.ti-photo-heart
-				| NFT
-				//- i.far.fa-angle-down
-				span.status SOON
-			div#collapseNFT.collapse
-				ul.navbar-dropdown 
-					li.navbar-item 
-						a.navbar-link(href="#!" )
-							span.icon 
-								i.ti.ti-brush
-							| Generate NFT
-					li.navbar-item 
-						a.navbar-link(href="#!")
-							span.icon 
-								i.ti.ti-pointer
-							| Creat Mint
-					li.navbar-item 
-						a.navbar-link(href="#!")
-							span.icon 
-								i.ti.ti-speakerphone
-							| Creat NFT presale
-					li.navbar-item 
-						a.navbar-link(href="#!")
-							span.icon 
-								i.ti.ti-stairs
-							| Creat NFT staking
+				| NFT Management
 
-					//- NFT Manager Level 2
-					li.navbar-item 
-						a.navbar-link(data-toggle="collapse" href="#collapseNFTManager" aria-expanded="false")
-							span.icon 
-								i.ti.ti-circles
-							| NFT manager
-							i.far.fa-angle-down
-						div#collapseNFTManager.collapse
-							ul.navbar-dropdown 
-								li.navbar-item 
-									a.navbar-link(href="#!")
-										span.icon 
-											i.ti.ti-moneybag
-										| Snapshot NFT holder
-								li.navbar-item 
-									a.navbar-link(href="#!")
-										span.icon 
-											i.ti.ti-tournament
-										| NFT multisender
-								li.navbar-item 
-									a.navbar-link(href="#!")
-										span.icon 
-											i.ti.ti-brand-databricks
-										| Update NFT metadata
-								li.navbar-item 
-									a.navbar-link(href="#!")
-										span.icon 
-											i.ti.ti-matchstick
-										| NFT Incinerator
-		
-		//- Launchpad
-		li.navbar-item 
-			a.navbar-link.disabled(disabled)
+		//- Bee Fun
+		li.navbar-item.dropdown
+			a.navbar-link(href="#!")
 				span.icon 
-					i.ti.ti-rocket
-				| Launchpad
-				span.status SOON
-		//- Trading Bot
-		li.navbar-item 
-			a.navbar-link.disabled(disabled)
+					i.ti.ti-mood-happy
+				| Bee Fun
+
+		//- Docs
+		li.navbar-item.dropdown
+			a.navbar-link(href="#!")
 				span.icon 
-					i.ti.ti-chart-dots
-				| Trading Bot
-				span.status SOON
-		//- SolClaim
-		li.navbar-item 
-			a.navbar-link.disabled(disabled)
-				span.icon 
-					i.ti.ti-hand-click
-				| SolClaim
-				span.status SOON
+					i.ti.ti-file-dots
+				| Docs
+
+
 	.menu-support 
 		a(href="#!" class="support-chat")
 			img(src="./images/dev-support-icon.png", alt="Dev Support") 
