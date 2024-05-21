@@ -206,6 +206,9 @@ html {
       display: none;
       font-size: 22px; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   font-family: "Lexend", sans-serif; }
 
