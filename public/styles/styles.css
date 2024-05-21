@@ -417,11 +417,13 @@ body {
       color: var(--text-black);
       font-size: 14px;
       line-height: 20px;
-      font-weight: 400;
+      font-weight: 500;
       cursor: pointer;
       text-decoration: none;
       margin-top: 8px;
       padding: 2px 15px 2px 3px; }
+      .sidebar-left .navbar-menu-left .navbar-wrapper .navbar-item .navbar-link.text-gray {
+        color: #747474; }
       .sidebar-left .navbar-menu-left .navbar-wrapper .navbar-item .navbar-link:hover, .sidebar-left .navbar-menu-left .navbar-wrapper .navbar-item .navbar-link.active, .sidebar-left .navbar-menu-left .navbar-wrapper .navbar-item .navbar-link[aria-expanded="true"] {
         background: var(--linear-primary);
         padding: 2px 15px 2px 3px;
@@ -633,10 +635,6 @@ body {
 
 body.home-page .page-wrapper {
   background-image: none; }
-
-@media only screen and (min-width: 1200px) {
-  body.home-page .menu-section {
-    height: 100vh; } }
 
 body.home-page .home-page-section {
   width: calc(100% - 300px);
