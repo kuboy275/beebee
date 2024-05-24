@@ -654,7 +654,7 @@ body.home-page .home-page-section {
       width: 100%;
       max-width: 100%;
       background-image: url("../images/home-page-bg-mobile.png");
-      background-position: bottom;
+      background-position: 0 -150px;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative; } }
@@ -673,7 +673,7 @@ body.home-page .home-page-section {
         -webkit-box-pack: end;
         -ms-flex-pack: end;
         justify-content: end;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; } }

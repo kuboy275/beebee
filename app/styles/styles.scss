@@ -532,7 +532,7 @@ body.home-page {
             width: 100%;
             max-width: 100%;
             background-image: url("../images/home-page-bg-mobile.png");
-            background-position: bottom;
+            background-position: 0 -150px;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
@@ -545,7 +545,7 @@ body.home-page {
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
-                padding-bottom: 50px;
+                padding-bottom: 70px;
                 align-items: center;
             }
             .home-banner-title {
