@@ -655,7 +655,7 @@ body.home-page .home-page-section {
       max-width: 100%;
       background-image: url("../images/home-page-bg-mobile.png");
       height: calc(100vh - 90px);
-      background-position: 0px -150px;
+      background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative; } }
@@ -709,12 +709,15 @@ body.home-page .home-page-section {
             line-height: 46px; } }
     body.home-page .home-page-section .home-banner .home-page-icon {
       position: absolute;
-      right: 200px;
+      right: 250px;
       bottom: 200px;
       text-align: right; }
       body.home-page .home-page-section .home-banner .home-page-icon img {
-        -webkit-animation: 1s linear infinite fly-bee-icon;
-        animation: 1s linear infinite fly-bee-icon; }
+        -webkit-animation: 2.5s linear infinite fly-bee-icon;
+        animation: 2.5s linear infinite fly-bee-icon; }
+        @media only screen and (min-width: 1200px) {
+          body.home-page .home-page-section .home-banner .home-page-icon img {
+            width: 135%; } }
       @media only screen and (max-width: 1200px) {
         body.home-page .home-page-section .home-banner .home-page-icon {
           bottom: 0;

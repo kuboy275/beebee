@@ -533,7 +533,7 @@ body.home-page {
             max-width: 100%;
             background-image: url("../images/home-page-bg-mobile.png");
             height: calc(100vh - 90px);
-            background-position: 0px -150px;
+            background-position: bottom;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
@@ -587,11 +587,14 @@ body.home-page {
 
             .home-page-icon {
                 position: absolute;
-                right: 200px;
+                right: 250px;
                 bottom: 200px;
                 text-align: right;
                 img {
-                    animation: 1s linear infinite fly-bee-icon;
+                    @media only screen and (min-width:1200px) {
+                        width: 135%;
+                    }
+                    animation: 2.5s linear infinite fly-bee-icon;
                 }
 
                 @media only screen and (max-width:1200px) {
