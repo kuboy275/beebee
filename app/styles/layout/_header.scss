@@ -1,6 +1,8 @@
 .main-header {
     background: #FCFDFE;
     border-radius: 0px, 0px, 1px, 0px;
+    position: relative;
+    z-index: 1;
     @media only screen and (max-width:1200px){
         height: 85px;
     }

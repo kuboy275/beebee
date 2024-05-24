@@ -533,7 +533,7 @@ body.home-page {
             max-width: 100%;
             background-image: url("../images/home-page-bg-mobile.png");
             height: calc(100vh - 90px);
-            background-position: bottom;
+            background-position: 0px -150px;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
@@ -546,7 +546,8 @@ body.home-page {
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
-                padding-bottom: 70px;
+                padding-bottom: 50px;
+                align-items: center;
             }
             .home-banner-title {
                 position: absolute;
@@ -580,6 +581,35 @@ body.home-page {
                     h1 {
                         font-size: 35px;
                         line-height: 46px;
+                    }
+                }
+            }
+
+            .home-page-icon {
+                position: absolute;
+                right: 200px;
+                bottom: 200px;
+                text-align: right;
+                img {
+                    animation: 1s linear infinite fly-bee-icon;
+                }
+
+                @media only screen and (max-width:1200px) {
+                    bottom: 0;
+                    top: 100px;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+
+                @keyframes fly-bee-icon{
+                    0% {
+                        transform: translateY(0px);
+                    }
+                    50% {
+                        transform: translateY(-30px);
+                    }
+                    100% {
+                        transform: translateY(0px);
                     }
                 }
             }
