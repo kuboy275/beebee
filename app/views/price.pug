@@ -1,0 +1,31 @@
+extends layout/layout
+
+block vars
+	-title = 'Bee Bee'
+	-bodyClass = 'content-page'
+	-page= 'price'
+	-pageName= 'Price'
+
+block container
+	.main-content.py-0
+		.container-fluid 
+			.row.flex-xl-nowrap.justify-content-xl-between 	
+				.col-12.col-xl-auto.menu-section
+					.sidebar-left
+						include ./blocks/navbar
+				.col-12.col-xl-9.content-background-center.full-page
+					.content-wrapper 
+						.content-submit 
+							.col-12
+								h6.content-submit-title Create Liquidity Pool 
+								p.content-submit-desc Use the default mode, the cost will be the lowest. Just fill in the contract token and then click "Create Openbook Market"
+								.price-section 
+									+price-item("combo-color-1")
+									+price-item("combo-color-2")
+									+price-item("combo-color-3")
+									+price-item("combo-color-1")
+									+price-item("combo-color-2")
+									+price-item("combo-color-3")
+									+price-item("combo-color-1")
+									+price-item("combo-color-2")
+									
