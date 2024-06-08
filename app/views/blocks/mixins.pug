@@ -1,21 +1,22 @@
 mixin price-item(classItem)
-    .price-item(class=classItem)
-        .price-title 	
-            h3 Basic 
-            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at, nam minima minus quod porro quisquam unde laudantium fugiat labore
-        .price-main
-            .price-value 
-                img(src="./images/solona-price-icon.png", width="30" height="30")
-                h1 99
-            p.price-month per month 
-        .price-desc 
-            .price-desc-item 
-                span.line 
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor. Ea obcaecati sint porro harum, perferendis maiores odit consectetur unde.
-            .price-desc-item 
-                span.line 
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor. Ea obcaecati sint porro harum, perferendis maiores odit consectetur unde.
-            .price-desc-item 
-                span.line 
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor. Ea obcaecati sint porro harum, perferendis maiores odit consectetur unde.
-        button.btn-purchase.btn.btn-primary PURCHASE
+    .swiper-slide
+        .price-item(class=classItem)
+            .price-title 	
+                h3 Basic 
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at
+            .price-main
+                .price-value 
+                    img(src="./images/solona-price-icon.png", width="30" height="30")
+                    h1 99
+                p.price-month per month 
+            .price-desc 
+                .price-desc-item 
+                    span.line 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.
+                .price-desc-item 
+                    span.line 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.
+                .price-desc-item 
+                    span.line 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.
+            button.btn-purchase.btn.btn-primary PURCHASE

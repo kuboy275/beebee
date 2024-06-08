@@ -40,6 +40,31 @@ function autoShowDropdownNavbar() {
 }
 
 
+const swiperMoile = () => {
+    let init = false;
+    let priceSwiperSlider;
+    if(window.innerWidth <= 1200) {
+        if(!init) {
+            init = true;
+            priceSwiperSlider = new Swiper('.price-swiper-slider-js', {
+                slidesPerView: 1, // or 'auto'
+                slidesPerColumn: 1,
+                spaceBetween: 50,
+                initialSlide: 1,
+                navigation: {
+                    prevEl: '.swiper-price-prev',
+                    nextEl: '.swiper-price-next',
+                },
+            });
+        }
+    }else if(init) {
+        priceSwiperSlider.destroy();
+        priceSwiperSlider = undefined;
+        init = false;
+    }
+
+    console.log(init, priceSwiperSlider);
+}
 
 $(document).ready(function () {
     // Add Receiver Address Input
@@ -57,30 +82,10 @@ $(document).ready(function () {
         $('#modalConnectWallet').modal('hide');
     });
 
-    $('.home-partners-sliders').slick({
-        infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        speed: 700,
-        autoplay: true,
-        autoplaySpeed: 700,
-        touchThreshold:100,
-        arrows: false,
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 2,
-              }
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            }
-          ]
-    });
+    // Price Swiper Sliders
+    swiperMoile();
+    window.addEventListener("resize", swiperMoile);
+
+
+
 });

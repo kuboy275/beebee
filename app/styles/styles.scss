@@ -725,17 +725,50 @@ body.home-page {
         margin-bottom: 20px;
     }
 
+    .price-swiper-slider-js {
+        overflow: hidden;
+        @media only screen and (max-width:1200px) {
+            width: 80%;
+            margin-inline: auto;
+        }
+        .swiper-navigation {
+            max-width: 35px;
+            max-height: 35px;
+            width: 35px;
+            height: 35px;
+            padding: 0;
+            border-radius: 5px;
+            // border: 1px solid purple;
+            position: absolute;
+            &::after {
+                font-size: 15px;
+            }
+            &.swiper-price-prev {
+                left: 0;
+            }
+            &.swiper-price-next {
+                right: 0;
+            }
+            @media only screen and (min-width:1200px) {
+                display: none;
+            }
+        }
+    }
     // Price Item page
     .price-section {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        @media only screen and (min-width:1200px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px 30px;
+            margin-top: 30px;
+        }
+        
 
         .price-item {
             border-radius: 5px 80px 5px 80px;
-            background-color: #f8f8f8;
+            background-color: #f2f2f2;
             padding: 20px 15px;
-            height: 100%;
+            // height: 100%;
             font-family: "Inter", sans-serif;
             .price-title {
                 text-align: center;
