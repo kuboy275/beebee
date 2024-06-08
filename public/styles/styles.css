@@ -868,7 +868,8 @@ body.home-page .home-page-section {
       height: 35px;
       padding: 0;
       border-radius: 5px;
-      position: absolute; }
+      position: absolute;
+      z-index: 1; }
       .content-submit .price-swiper-slider-js .swiper-navigation::after {
         font-size: 15px; }
       .content-submit .price-swiper-slider-js .swiper-navigation.swiper-price-prev {
