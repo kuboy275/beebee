@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bee Bee</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="content-page">
+  <div class="page-wrapper">
+    <header class="main-header">
+      <div class="container py-4 py-xl-3">
+        <div class="row align-items-center justify-content-between flex-nowrap">
+          <div class="col-auto d-block d-xl-none pr-0">
+            <button class="btn btn-icon btn-open-menu"><i class="far fa-grip-lines icon-open"></i><i
+                class="far fa-times icon-close"></i></button>
+          </div>
+          <div class="col-auto col-xl-3"> <a class="logo" href="./index.html"><img
+                class="logo-desktop d-none d-xl-block" src="./images/logo.png" alt="Logo"><img
+                class="logo-mobile d-block d-xl-none" src="./images/logo-mobile.png" alt="Logo"></a></div>
+          <div class="col-12 col-xl-5 d-none d-xl-block">
+            <div class="bread-crumbs d-flex flex-column">
+              <h6 class="title-page">SOLMINT</h6>
+              <ul class="bread-crumbs-list d-flex align-items-center">
+                <li> <span>Home/</span></li>
+                <li> <span>Token Manager/</span></li>
+                <li> <span class="active">Price</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-auto col-xl-4 pl-0">
+            <div class="d-flex align-items-center justify-content-end gap-20">
+              <div class="logo d-none d-xl-block"><img src="./images/logo-solana.png" alt="Solana Logo"></div><a
+                class="btn btn-primary btn-connect-wallet" href="#!" data-toggle="modal"
+                data-target="#modalConnectWallet"> <i class="fas fa-wallet img-desktop d-block d-xl-none"></i><span
+                  class="d-none d-xl-block">Connect wallet</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-content py-0">
+      <div class="container-fluid">
+        <div class="row flex-xl-nowrap justify-content-xl-between">
+          <div class="col-12 col-xl-auto menu-section">
+            <div class="sidebar-left">
+              <div class="navbar-menu-left">
+                <ul class="navbar-wrapper">
+                  <li class="navbar-item"> <a class="navbar-link" href="./index.html"><span class="icon"> <i
+                          class="ti ti-home-2"></i></span>Home </a></li>
+                  <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse"
+                      href="#collapseTokenManager" aria-expanded="false"><span class="icon"> <i
+                          class="ti ti-coins"></i></span>Token Management <i class="far fa-angle-down"></i></a>
+                    <div class="collapse" id="collapseTokenManager">
+                      <ul class="navbar-dropdown">
+                        <li class="navbar-item"> <a class="navbar-link" href="token-creator.html"><span class="icon"> <i
+                                class="ti ti-vector"></i></span>Token Creator <span class="status-ic"> <img
+                                src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="mint-revoke-authority.html"><span
+                              class="icon"> <i class="ti ti-businessplan"></i></span>Mint, Revoke Authority </a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="./token-burn.html"><span class="icon"> <i
+                                class="ti ti-flame"></i></span>Token Burn</a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="./update-metadata.html"><span
+                              class="icon"> <i class="ti ti-edit-circle"></i></span>Update Metadata</a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="multi-sender.html"><span class="icon"> <i
+                                class="ti ti-users-group"></i></span>Multisender</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse"
+                      href="#collapseLpManagement" aria-expanded="false"><span class="icon"> <i
+                          class="ti ti-droplet"></i></span>LP Management<i class="far fa-angle-down"></i></a>
+                    <div class="collapse" id="collapseLpManagement">
+                      <ul class="navbar-dropdown">
+                        <li class="navbar-item"> <a class="navbar-link" href="./create-liquidity-pool.html"><span
+                              class="icon"> <i class="ti ti-bucket-droplet"></i></span>Create Liquidity Pool</a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="./add-liquidity-pool.html"><span
+                              class="icon"> <i class="ti ti-droplet-up"></i></span>Add More Liquidity Pool</a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="./remove-liquidity-pool.html"><span
+                              class="icon"> <i class="ti ti-droplet-x"></i></span>Remove Liquidity Pool</a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i
+                                class="ti ti-campfire"></i></span>Burn Liquidity<span class="status-ic"> <img
+                                src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i
+                                class="ti ti-lock"></i></span>Lock Liquidity</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navbar-item"> <a class="navbar-link" href="./openbook-market.html"><span class="icon"> <i
+                          class="ti ti-building-store"></i></span>Create Openbook Market<span class="status-ic"> <img
+                          src="./images/icons/flame-filled-ic.png" alt=""></span></a></li>
+                  <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse"
+                      href="#collapseCreateLock" aria-expanded="false"><span class="icon"> <i
+                          class="ti ti-lock-access"></i></span>Lock Management<i class="far fa-angle-down"></i></a>
+                    <div class="collapse" id="collapseCreateLock">
+                      <ul class="navbar-dropdown">
+                        <li class="navbar-item"> <a class="navbar-link" href="lock-lp-token.html"><span class="icon"> <i
+                                class="ti ti-circle-key"></i></span>Lock Token</a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="unlock.html"><span class="icon"> <i
+                                class="ti ti-cloud-lock"></i></span>Unlock Token</a></li>
+                        <li class="navbar-item"> <a class="navbar-link" href="info-lock.html"><span class="icon"> <i
+                                class="ti ti-cloud-lock"></i></span>Lock Info</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navbar-item dropdown"><a class="navbar-link text-gray" href="#!"><span class="icon"> <i
+                          class="ti ti-building-store"></i></span>Snipe Block-0</a></li>
+                  <li class="navbar-item dropdown"><a class="navbar-link text-gray" href="#!"><span class="icon"> <i
+                          class="ti ti-robot"></i></span>Bee TradingBot</a></li>
+                  <li class="navbar-item dropdown"><a class="navbar-link text-gray" href="#!"><span class="icon"> <i
+                          class="ti ti-battery-automotive"></i></span>Deployer Auto Bot</a></li>
+                  <li class="navbar-item dropdown"><a class="navbar-link text-gray" href="#!"><span class="icon"> <i
+                          class="ti ti-photo-heart"></i></span>NFT Management</a></li>
+                  <li class="navbar-item dropdown"><a class="navbar-link text-gray" href="#!"><span class="icon"> <i
+                          class="ti ti-mood-happy"></i></span>Bee Fun</a></li>
+                  <li class="navbar-item dropdown"><a class="navbar-link" href="#!"><span class="icon"> <i
+                          class="ti ti-file-dots"></i></span>Docs</a></li>
+                  <li class="navbar-item dropdown"><a class="navbar-link" href="price.html"><span class="icon"> <i
+                          class="ti ti-file-dots"></i></span>Price</a></li>
+                </ul>
+                <div class="menu-support"> <a class="support-chat" href="#!"><img src="./images/dev-support-icon.png"
+                      alt="Dev Support"></a>
+                  <div class="support-socials"> <a href="#!"><img src="./images/telegram-icon.png" width="20"
+                        alt="icon"></a><a href="#!"><img src="./images/twitter-icon.png" width="20" alt="icon"></a><a
+                      href="#!"><img src="./images/medium-icon.png" width="20" alt="icon"></a></div>
+                  <div class="support-languagues">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="w-100 nav-link active" data-toggle="tab">English</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="w-100 nav-link" data-toggle="tab">Chinese</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="support-copyright">
+                    <p>© 2024 BeeBee v1.1. All rights reserved.</p>
+                    <p>Powered by BeeLab</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-9 content-background-center full-page">
+            <div class="content-wrapper">
+              <div class="content-submit">
+                <div class="col-12">
+                  <h6 class="content-submit-title">Create Liquidity Pool </h6>
+                  <p class="content-submit-desc">Use the default mode, the cost will be the lowest. Just fill in the
+                    contract token and then click "Create Openbook Market"</p>
+                  <div class="price-swiper-slider-js">
+                    <div class="price-section swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="price-item combo-color-1">
+                          <div class="price-title">
+                            <h3>Express</h3>
+                            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at</p> -->
+                          </div>
+                          <div class="price-main">
+                            <div class="price-value"> <img src="./images/solona-price-icon.png" width="30"
+                                height="30" />
+                              <h1>5</h1>
+                            </div>
+                            <p class="price-month">1 day</p>
+                          </div>
+                          <div class="price-desc">
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Full access to all current BeeBee services</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Perfect for short-term needs and quick launches</p>
+                            </div>
+                          </div>
+                          <button class="btn-purchase btn btn-primary">PURCHASE</button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="price-item combo-color-2">
+                          <div class="price-title">
+                            <h3>Basic </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at</p>
+                          </div>
+                          <div class="price-main">
+                            <div class="price-value"> <img src="./images/solona-price-icon.png" width="30"
+                                height="30" />
+                              <h1>99</h1>
+                            </div>
+                            <p class="price-month">per month </p>
+                          </div>
+                          <div class="price-desc">
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                          </div>
+                          <button class="btn-purchase btn btn-primary">PURCHASE</button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="price-item combo-color-3">
+                          <div class="price-title">
+                            <h3>Basic </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at</p>
+                          </div>
+                          <div class="price-main">
+                            <div class="price-value"> <img src="./images/solona-price-icon.png" width="30"
+                                height="30" />
+                              <h1>99</h1>
+                            </div>
+                            <p class="price-month">per month </p>
+                          </div>
+                          <div class="price-desc">
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                          </div>
+                          <button class="btn-purchase btn btn-primary">PURCHASE</button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="price-item combo-color-1">
+                          <div class="price-title">
+                            <h3>Basic </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at</p>
+                          </div>
+                          <div class="price-main">
+                            <div class="price-value"> <img src="./images/solona-price-icon.png" width="30"
+                                height="30" />
+                              <h1>99</h1>
+                            </div>
+                            <p class="price-month">per month </p>
+                          </div>
+                          <div class="price-desc">
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                          </div>
+                          <button class="btn-purchase btn btn-primary">PURCHASE</button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="price-item combo-color-2">
+                          <div class="price-title">
+                            <h3>Basic </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at</p>
+                          </div>
+                          <div class="price-main">
+                            <div class="price-value"> <img src="./images/solona-price-icon.png" width="30"
+                                height="30" />
+                              <h1>99</h1>
+                            </div>
+                            <p class="price-month">per month </p>
+                          </div>
+                          <div class="price-desc">
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                          </div>
+                          <button class="btn-purchase btn btn-primary">PURCHASE</button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="price-item combo-color-3">
+                          <div class="price-title">
+                            <h3>Basic </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at</p>
+                          </div>
+                          <div class="price-main">
+                            <div class="price-value"> <img src="./images/solona-price-icon.png" width="30"
+                                height="30" />
+                              <h1>99</h1>
+                            </div>
+                            <p class="price-month">per month </p>
+                          </div>
+                          <div class="price-desc">
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                          </div>
+                          <button class="btn-purchase btn btn-primary">PURCHASE</button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="price-item combo-color-1">
+                          <div class="price-title">
+                            <h3>Basic </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at</p>
+                          </div>
+                          <div class="price-main">
+                            <div class="price-value"> <img src="./images/solona-price-icon.png" width="30"
+                                height="30" />
+                              <h1>99</h1>
+                            </div>
+                            <p class="price-month">per month </p>
+                          </div>
+                          <div class="price-desc">
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                          </div>
+                          <button class="btn-purchase btn btn-primary">PURCHASE</button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="price-item combo-color-2">
+                          <div class="price-title">
+                            <h3>Basic </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus eum aut at</p>
+                          </div>
+                          <div class="price-main">
+                            <div class="price-value"> <img src="./images/solona-price-icon.png" width="30"
+                                height="30" />
+                              <h1>99</h1>
+                            </div>
+                            <p class="price-month">per month </p>
+                          </div>
+                          <div class="price-desc">
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                            <div class="price-desc-item"> <span class="line"> </span>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+                            </div>
+                          </div>
+                          <button class="btn-purchase btn btn-primary">PURCHASE</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-navigation btn-primary swiper-price-prev"></div>
+                    <div class="swiper-button-next swiper-navigation btn-primary swiper-price-next"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-popup" tabindex="-1" id="modalConnectWallet">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><img src="./images/logo.png" alt="" width="100px">
+            <button class="close btn btn-icon" type="button" data-dismiss="modal" aria-label="Close"><i
+                class="fal fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <h3 class="modal-title">Connect a wallet on Solana to continue</h3>
+            <form class="form-modal" action="">
+              <div class="form-select">
+                <div class="item-select">
+                  <div class="icon"> </div><span>Phantom</span>
+                </div>
+              </div>
+              <div class="form-select">
+                <div class="item-select">
+                  <div class="icon"> </div><span>Metamask</span>
+                </div>
+              </div>
+              <button class="btn btn-primary w-100" type="submit"> Connect</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@1.74.0/icons-react/dist/index.umd.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

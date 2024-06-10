@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.content-submit .price-swiper-slider-js {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content-submit .price-swiper-slider-js {
+        width: 80%;
+        margin-inline: auto;
+    }
+}
+
+.content-submit .price-swiper-slider-js .swiper-navigation {
+    max-width: 35px;
+    max-height: 35px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.content-submit .price-swiper-slider-js .swiper-navigation::after {
+    font-size: 15px;
+}
+
+.content-submit .price-swiper-slider-js .swiper-navigation.swiper-price-prev {
+    left: 0;
+}
+
+.content-submit .price-swiper-slider-js .swiper-navigation.swiper-price-next {
+    right: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .content-submit .price-swiper-slider-js .swiper-navigation {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content-submit .price-section {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px 30px;
+        margin-top: 30px;
+    }
+}
+
+.content-submit .price-section .price-item {
+    border-radius: 5px 80px 5px 80px;
+    background-color: #f2f2f2;
+    padding: 20px 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.content-submit .price-section .price-item .price-title {
+    text-align: center;
+}
+
+.content-submit .price-section .price-item .price-title h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content-submit .price-section .price-item .price-title p {
+    margin-block: 15px 25px;
+    color: #808080;
+    font-size: 12px;
+}
+
+.content-submit .price-section .price-item .price-main .price-value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 5;
+}
+
+.content-submit .price-section .price-item .price-main .price-value img {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.content-submit .price-section .price-item .price-main .price-value h1 {
+    font-size: 100px;
+    font-weight: 800;
+}
+
+.content-submit .price-section .price-item .price-main .price-month {
+    text-align: center;
+    color: #808080;
+    font-size: 16px;
+    margin-block: 15px 25px;
+}
+
+.content-submit .price-section .price-item .price-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.content-submit .price-section .price-item .price-desc .price-desc-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+}
+
+.content-submit .price-section .price-item .price-desc .price-desc-item .line {
+    border-radius: 10px;
+    width: 20px;
+    height: 8px;
+    background-color: red;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.content-submit .price-section .price-item .price-desc .price-desc-item p {
+    color: #3E4047;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.content-submit .price-section .price-item .btn-purchase {
+    margin-top: 50px;
+    margin-inline: auto;
+}
+
+.content-submit .price-section .price-item.combo-color-1 .price-title h3 {
+    background: -webkit-gradient(linear, right top, left top, from(#DC42FF), to(#4D79FF));
+    background: linear-gradient(to left, #DC42FF, #4D79FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-submit .price-section .price-item.combo-color-1 .price-main .price-value h1 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#DC42FF), to(#4D79FF));
+    background: linear-gradient(to top, #DC42FF, #4D79FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-submit .price-section .price-item.combo-color-1 .price-desc .price-desc-item .line {
+    background: -webkit-gradient(linear, right top, left top, from(#DC42FF), to(#4D79FF));
+    background: linear-gradient(to left, #DC42FF, #4D79FF);
+}
+
+.content-submit .price-section .price-item.combo-color-2 .price-title h3 {
+    background: -webkit-gradient(linear, right top, left top, from(#EF26D1), to(#FF6F4F));
+    background: linear-gradient(to left, #EF26D1, #FF6F4F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-submit .price-section .price-item.combo-color-2 .price-main .price-value h1 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#EF26D1), to(#FF6F4F));
+    background: linear-gradient(to top, #EF26D1, #FF6F4F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-submit .price-section .price-item.combo-color-2 .price-desc .price-desc-item .line {
+    background: -webkit-gradient(linear, right top, left top, from(#EF26D1), to(#FF6F4F));
+    background: linear-gradient(to left, #EF26D1, #FF6F4F);
+}
+
+.content-submit .price-section .price-item.combo-color-3 .price-title h3 {
+    background: -webkit-gradient(linear, right top, left top, from(#3CE8A9), to(#2BA3FF));
+    background: linear-gradient(to left, #3CE8A9, #2BA3FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-submit .price-section .price-item.combo-color-3 .price-main .price-value h1 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#3CE8A9), to(#2BA3FF));
+    background: linear-gradient(to top, #3CE8A9, #2BA3FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-submit .price-section .price-item.combo-color-3 .price-desc .price-desc-item .line {
+    background: -webkit-gradient(linear, right top, left top, from(#3CE8A9), to(#2BA3FF));
+    background: linear-gradient(to left, #3CE8A9, #2BA3FF);
+}

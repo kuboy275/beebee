@@ -69,8 +69,6 @@ const swiperMoile = () => {
         priceSwiperSlider = undefined;
         init = false;
     }
-
-    console.log(init, priceSwiperSlider);
 }
 
 $(document).ready(function () {
