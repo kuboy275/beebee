@@ -888,7 +888,7 @@ body.home-page .home-page-section {
       gap: 50px 30px;
       margin-top: 30px; } }
   .content-submit .price-section .price-item {
-    border-radius: 5px 80px 5px 80px;
+    border-radius: 5px 50px 5px 50px;
     background-color: #f2f2f2;
     padding: 20px 15px;
     height: 100%;
@@ -951,7 +951,10 @@ body.home-page .home-page-section {
           line-height: 16px; }
     .content-submit .price-section .price-item .btn-purchase {
       margin-top: 50px;
-      margin-inline: auto; }
+      margin-inline: auto;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content; }
     .content-submit .price-section .price-item.combo-color-1 .price-title h3 {
       background: -webkit-gradient(linear, right top, left top, from(#DC42FF), to(#4D79FF));
       background: linear-gradient(to left, #DC42FF, #4D79FF);
